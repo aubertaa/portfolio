@@ -1,1 +1,12 @@
-<p>header works!</p>
+<header>
+  <nav>
+    <a routerLink="/">Home</a>
+    <a routerLink="/about">About</a>
+    <a routerLink="/competencies">Competencies</a>
+    <a routerLink="/projects">Projects</a>
+    <a routerLink="/contact">Contact</a>
+  </nav>
+  <button mat-icon-button (click)="toggleTheme()">
+    <mat-icon>{{ themeService.isDarkTheme ? 'dark_mode' : 'light_mode' }}</mat-icon>
+  </button>
+</header>

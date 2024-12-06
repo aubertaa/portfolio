@@ -1,1 +1,11 @@
-<p>competencies works!</p>
+<div class="competencies">
+  <h2>Competencies</h2>
+  <mat-card class="competency-card" *ngFor="let competency of competencies">
+    <mat-card-header>
+      <mat-card-title>{{ competency.title }}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <p>{{ competency.description }}</p>
+    </mat-card-content>
+  </mat-card>
+</div>
