@@ -1,6 +1,6 @@
 <div class="competencies">
   <h2>Competencies</h2>
-  <mat-card class="competency-card" *ngFor="let competency of competencies">
+  <mat-card class="competency-card" *ngFor="let competency of getCompetencies()">
     <mat-card-header>
       <mat-card-title>{{ competency.title }}</mat-card-title>
     </mat-card-header>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CompetenciesService } from '../../services/competencies.service';
 
 @Component({
   selector: 'app-competencies',
@@ -6,11 +7,12 @@ import { Component } from '@angular/core';
   styleUrl: './competencies.component.scss'
 })
 export class CompetenciesComponent {
-  competencies = [
-    { title: 'Agility', description: 'Scrum Master, Agile Member, etc.' },
-    { title: 'Software Testing', description: 'ISTQB, Test Automation, etc.' },
-    { title: 'DevOps', description: 'AWS, Docker, Kubernetes, etc.' },
-    // Add more as required
-  ];
+
+constructor(private competenciesService: CompetenciesService) { }
+
+getCompetencies() {
+  return this.competenciesService.getCompetencies();
+ }
+
 
 }
