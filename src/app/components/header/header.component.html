@@ -7,6 +7,6 @@
     <a routerLink="/contact">Contact</a>
   </nav>
   <button mat-icon-button (click)="toggleTheme()">
-    <mat-icon>{{ themeService.isDarkTheme ? 'dark_mode' : 'light_mode' }}</mat-icon>
+    <span>{{ themeService.isDarkTheme ? 'dark_mode' : 'light_mode' }}</span>
   </button>
 </header>

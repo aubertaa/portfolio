@@ -2,6 +2,7 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+@import "https://bootswatch.com/5/sketchy/bootstrap.min.css";
 
 body {
     font-family: Arial, sans-serif;
@@ -24,6 +25,9 @@ nav a {
 }
 
 body.dark-theme {
-    background-color: #121212;
+    background-color: #333;
     color: white;
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

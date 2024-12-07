@@ -13,8 +13,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 
-import { MatCardModule } from '@angular/material/card';
-import { MatIconModule } from '@angular/material/icon';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -31,11 +30,11 @@ import { MatIconModule } from '@angular/material/icon';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule,
-    MatIconModule,
-    MatCardModule
+    NgbModule
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
