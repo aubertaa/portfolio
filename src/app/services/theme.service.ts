@@ -5,10 +5,14 @@ import { Injectable } from '@angular/core';
 })
 export class ThemeService {
 
-    isDarkTheme = false;
+    isLightTheme = false;
 
     toggleTheme (): void {
-        this.isDarkTheme = !this.isDarkTheme;
-        document.body.classList.toggle('dark-theme', this.isDarkTheme);
+      this.isLightTheme = !this.isLightTheme;
+      document.body.classList.toggle('light-theme', this.isLightTheme);
+      const header = document.querySelector('header');
+      if (header) {
+        header.classList.toggle('light-theme', this.isLightTheme);
+      }
     }
 }

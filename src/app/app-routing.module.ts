@@ -9,9 +9,9 @@ import { ContactComponent } from './pages/contact/contact.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'competencies', component: CompetenciesComponent },
-  { path: 'projects', component: ProjectsComponent },
+  { path: 'qui-suis-je', component: AboutComponent },
+  { path: 'mes-competences', component: CompetenciesComponent },
+  { path: 'projets', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
 ];
 
