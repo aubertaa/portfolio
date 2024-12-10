@@ -8,9 +8,12 @@ import { Component } from '@angular/core';
 export class HomeComponent {
 
   sections = [
-    { title: 'Qui suis-je ?', description: 'Learn more about my journey.', link: '/about' },
-    { title: 'Mes compétences', description: 'Explore my skillset.', link: '/competencies' },
-    { title: 'Mes projets', description: 'See my projects.', link: '/projects' },
-    { title: 'Contact', description: 'Get in touch with me.', link: '/contact' },
+    { title: 'Qui suis-je ?', description: 'En savoir plus à propos de moi et mon parcours', link: '/qui-suis-je' },
+    { title: 'Ma bibliothèque', description: 'Mes lectures professionnelles, ouvrage de référence et sources d\'inspiration', link: '/mes-competences' },
+    { title: 'Mes compétences', description: 'Découvrez mes compétences plus en détail', link: '/mes-competences' },
+    { title: 'Mes certifications', description: 'Les certifications que j\'ai obtenues', link: '/mes-certifications' },
+    { title: 'Mes projets', description: 'Découvrez mes projets et réalisations', link: '/projets' },
+    { title: 'Mes accomplissements', description: 'Mes accomplissements, publications et interventions', link: '/projets' },
+    { title: 'Contact', description: 'Contactez-moi via le formulaire de contact', link: '/contact' },
   ];
 }

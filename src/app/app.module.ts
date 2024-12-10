@@ -14,6 +14,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { TimelineComponent } from './components/timeline/timeline.component';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { CertificationsComponent } from './pages/certifications/certifications.component';
+import { AchievementsComponent } from './pages/achievements/achievements.component';
+import { LibraryComponent } from './pages/library/library.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,10 @@ import { provideAnimationsAsync } from '@angular/platform-browser/animations/asy
     ContactComponent,
     HeaderComponent,
     FooterComponent,
-    TimelineComponent
+    TimelineComponent,
+    CertificationsComponent,
+    AchievementsComponent,
+    LibraryComponent
   ],
   imports: [
     BrowserModule,
