@@ -49,7 +49,7 @@ export class CompetenciesService {
       },
       {
         title: 'Cypress',
-        category: 'Tests logiciels',
+        category: 'Outils',
         logo: '',
         level: 5,
         description: 'Implémentation de tests d\'interface automatisés, simulation de parcours utilisateur',
@@ -68,7 +68,7 @@ export class CompetenciesService {
         category: 'Ingénierie Logicielle',
         logo: '',
         level: 5,
-        description: 'Culture de l\'automatisation, de la collaboration entre \'Devs' et \'Ops\' pratiques d\'observabilité, monitoring métier, pratiques SRE',
+        description: 'Culture de l\'automatisation, de la collaboration entre \'Devs\' et \'Ops\' pratiques d\'observabilité, monitoring métier, pratiques SRE',
         certification: ''
       },
       {
@@ -168,6 +168,14 @@ export class CompetenciesService {
         certification: ''
       },
       {
+        title: 'Alexa Skills',
+        category: 'Langages/frameworks',
+        logo: '',
+        level: 4,
+        description: 'Développement d\'une skill Alexa pour la gestion de cave en ligne (https://www.macaveamoi.fr). Interactions avec la cave par la voix, gestion des stocks, sorties de cave, recherche de bouteilles, consultations des statistiques de consommation. Algorithmes phonex, distance de Levenshtein.',
+        certification: ''
+      },
+      {
         title: 'QuasarJS',
         category: 'Langages/frameworks',
         logo: '',
@@ -256,6 +264,30 @@ export class CompetenciesService {
         certification: ''
       },
       {
+        title: 'JIRA',
+        category: 'Tools',
+        logo: '',
+        level: 5,
+        description: 'Utilisation et administration, gestion des projets, des sprints, des backlogs, des tickets, des workflows, des permissions, des tableaux de bord, formation et accompagnement des utilisateurs',
+        certification: ''
+      },
+      {
+        title: 'OWASP Dependency Track',
+        category: 'Tools',
+        logo: '',
+        level: 4,
+        description: 'Utilisation et administration, gestion des projets, des dépendances, des vulnérabilités, des licences, intégration dans les pipelines de CI, formation et accompagnement des utilisateurs',
+        certification: ''
+      },
+      {
+        title: 'Neoload',
+        category: 'Tools',
+        logo: '',
+        level: 4,
+        description: 'Implémentation de tests de performance, suivi de la charge, analyse des résultats, intégration dans les pipelines de CI. Recommandations RAM/CPU et optimisation de la scalabilité de la solution logicielle',
+        certification: ''
+      },
+      {
         title: 'Sonarqube',
         category: 'Tools',
         logo: '',
@@ -287,7 +319,6 @@ export class CompetenciesService {
         description: 'Pratique occasionelle dans un contexte personnel ou informel',
         certification: ''
       }
-      // Add more as required
     ];
 
   }
