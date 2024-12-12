@@ -1,9 +1,200 @@
-.competency-card {
-    margin: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+/* General Card Styling */
+.card {
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.competency-card:hover {
+.card:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card .badge {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.badge-descr {
+    font-size: 20px;
+}
+
+/* Category Logo */
+.category-logo, .category-logo-descr {
+    width: 80px;
+    /* Adjust size as needed */
+    height: 80px;
+    border-radius: 50%;
+    object-fit: contain;
+    border: 2px solid #ddd;
+    padding: 5px;
+    background-color: #f9f9f9;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    height: 100%;
+    /* Ensures full height of the card body */
+}
+
+/* Colors for Different Categories */
+.badge-langages-frameworks {
+    background-color: #28a745;
+}
+
+.badge-ingénierie {
+    background-color: red;
+}
+
+.badge-outils {
+    background-color: #007bff;
+}
+
+.badge-langues {
+    background-color: #ffc107;
+}
+
+.badge-agilité {
+    background-color: purple;
+}
+
+.badge-tests {
+    background-color: darkcyan;
+}
+
+.card-footer {
+    color: goldenrod;
+}
+
+.card-body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Star Rating Styling */
+.level-stars i {
+    color: #ffc107;
+    /* Golden star color */
+    font-size: 15px;
+    /* Adjust star size */
+    margin: 0 2px;
+    /* Add spacing between stars */
+}
+
+/* Category section styling */
+.category-section {
+    margin-bottom: 3rem;
+}
+
+/* Title for the category */
+.category-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.category-title .light-theme {
+    color: #333;
+}
+
+/* Styling for the card when it's selected */
+.card-clicked {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    /* Add shadow to clicked card */
+}
+
+/* Description panel styling */
+.description-panel {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.description-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Popin Modal Styling */
+.popin-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background */
+    z-index: 1050;
+    visibility: visible;
+    opacity: 1;
+    /* Initially invisible */
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+    /* Smooth fade-in/out */
+}
+
+.popin-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.popin-header h4 {
+    margin: 0;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+}
+
+.popin-body {
+    margin-top: 20px;
+}
+
+.popin-footer {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.popin-footer .btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popin-footer .btn:hover {
+    background-color: #0056b3;
 }

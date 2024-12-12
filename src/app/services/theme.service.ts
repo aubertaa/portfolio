@@ -14,5 +14,6 @@ export class ThemeService {
       if (header) {
         header.classList.toggle('light-theme', this.isLightTheme);
       }
+      
     }
 }

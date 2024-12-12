@@ -10,7 +10,7 @@ export class CompetenciesService {
       {
         title: 'Scrum master',
         category: 'Agilité',
-        logo: '',
+        logo: 'logos/scrum_master.png',
         level: 5,
         description: 'Expérience de scrum master en équipe Agile : accompagnement, coaching, soutien des pratiques d\'amélioration continue, suivi des indicateurs Agile (vélocité, burndowns, WIP, cycle time, lead time)',
         certification: 'CSM'
@@ -18,7 +18,7 @@ export class CompetenciesService {
       {
         title: 'Membre d\'équipe Agile',
         category: 'Agilité',
-        logo: '',
+        logo: 'logos/agile_team_member.png',
         level: 5,
         description: 'Proactivité, auto-organisation, déroulé de sprints, estimations, implémentation de user stories',
         certification: ''
@@ -26,7 +26,7 @@ export class CompetenciesService {
       {
         title: 'Product Owner',
         category: 'Agilité',
-        logo: '',
+        logo: 'logos/product_owner.png',
         level: 5,
         description: 'Gestion, alimentation, priorisation du product Backlog du périmètre CI / Outils internes de l\'entreprise : (grooming et refinements)',
         certification: ''
@@ -34,7 +34,7 @@ export class CompetenciesService {
       {
         title: 'Pratiques de tests logiciels',
         category: 'Tests logiciels',
-        logo: '',
+        logo: 'logos/test_automation.png',
         level: 5,
         description: 'Stratégie d\'implémentation de tests logiciels, campagnes de test, écriture et exécution de tests logiciels, choix d\'outils de test en fonction des contextes projets',
         certification: 'ISTQB Fondation'
@@ -42,23 +42,15 @@ export class CompetenciesService {
       {
         title: 'Management de tests logiciels',
         category: 'Tests logiciels',
-        logo: '',
+        logo: 'logos/test_manager.png',
         level: 5,
         description: 'Définition et implémentation de politique de test, stratégie de test, gestion des risques et investissements en test',
         certification: 'ISTQB Test manager'
       },
       {
-        title: 'Cypress',
-        category: 'Outils',
-        logo: '',
-        level: 5,
-        description: 'Implémentation de tests d\'interface automatisés, simulation de parcours utilisateur',
-        certification: 'Advanced Cypress Professional'
-      },
-      {
         title: 'CI/CD',
         category: 'Ingénierie Logicielle',
-        logo: '',
+        logo: 'logos/cicd.png',
         level: 5,
         description: 'Pipelines de build/livraison, formation/accompagnement des équipes',
         certification: ''
@@ -66,7 +58,7 @@ export class CompetenciesService {
       {
         title: 'DevOps',
         category: 'Ingénierie Logicielle',
-        logo: '',
+        logo: 'logos/devops.png',
         level: 5,
         description: 'Culture de l\'automatisation, de la collaboration entre \'Devs\' et \'Ops\' pratiques d\'observabilité, monitoring métier, pratiques SRE',
         certification: ''
@@ -74,7 +66,7 @@ export class CompetenciesService {
       {
         title: 'Gestion de projet',
         category: 'Ingénierie Logicielle',
-        logo: '',
+        logo: 'logos/project_management.png',
         level: 4,
         description: 'Mise en place de tests transverses (inter-équipes, inter-sites), déploiement de nouveaux outils dans différents sites (VCS, Sonarqube, Dependency Track...)',
         certification: ''
@@ -82,7 +74,7 @@ export class CompetenciesService {
       {
         title: 'Management',
         category: 'Ingénierie Logicielle',
-        logo: '',
+        logo: 'logos/manager.png',
         level: 4,
         description: 'Actuellement manager de 22 personnes (3 testeur.se.s, 1 profil CI/DevOps, 4 profils Infra/DevOps, 13 développeur.se.s, 1 Product Owner)',
         certification: ''
@@ -90,7 +82,7 @@ export class CompetenciesService {
       {
         title: 'ISO 27001',
         category: 'Ingénierie Logicielle',
-        logo: '',
+        logo: 'logos/iso.png',
         level: 4,
         description: 'En charge de la mise en place et du suivi de la conformité ISO 27001 du processus de développement / livraison de l\'entreprise : 4-eyes principle, moindre privilège, revues de code croisées et analyses statiques de code (SAST). Participation à l\'audit annuel de renouvellement de la certification de l\'entreprise',
         certification: ''
@@ -98,7 +90,7 @@ export class CompetenciesService {
       {
         title: 'RGPD',
         category: 'Ingénierie Logicielle',
-        logo: '',
+        logo: 'logos/rgpd.png',
         level: 5,
         description: 'Respect du cadre règlementaire en vigueur : protection des données personnelles dans le cadre de la solution implémentée (données client / intégrité / complétude / rétention / consentement éclairé / finalités) et dans le cadre de la vie de l\'entreprise (données "employés")',
         certification: ''
@@ -106,23 +98,15 @@ export class CompetenciesService {
       {
         title: 'FinOps',
         category: 'Ingénierie Logicielle',
-        logo: '',
+        logo: 'logos/finops.png',
         level: 3,
         description: 'Suivi des coûts de l\'activité de développement de logiciels : coûts AWS, optimisations, réservations, dashboarding',
         certification: ''
       },
       {
-        title: 'VBA',
-        category: 'Langages/frameworks',
-        logo: '',
-        level: 4,
-        description: 'Développements de tests automatisés d\'un add-in Excel (XLStat), macros complexes, génération automatisée de tableurs complexes',
-        certification: ''
-      },
-      {
         title: 'Python',
         category: 'Langages/frameworks',
-        logo: '',
+        logo: 'logos/python.png',
         level: 4,
         description: 'Développement d\'outillages backoffice (alerting, monitoring, tâches de maintenance), projet de génération de données maison (hit-maker), pratiques de tests unitaires d\'intégration',
         certification: ''
@@ -130,7 +114,7 @@ export class CompetenciesService {
       {
         title: 'NodeJS',
         category: 'Langages/frameworks',
-        logo: '',
+        logo: 'logos/nodejs.png',
         level: 4,
         description: 'Développement de tests automatisés d\'API, projet d\'extraction et suivi des dépendances de projets NodeJS, pratiques de tests unitaires',
         certification: ''
@@ -138,23 +122,15 @@ export class CompetenciesService {
       {
         title: 'Shell',
         category: 'Langages/frameworks',
-        logo: '',
+        logo: 'logos/shell.png',
         level: 4,
         description: 'Développement de librairies utilitaires : encapsulation d\'outillage pour faciliter les interactions avec le cloud AWS, scripting pour les pipelines de CI',
         certification: ''
       },
       {
-        title: 'Groovy',
-        category: 'Langages/frameworks',
-        logo: '',
-        level: 4,
-        description: 'Implémentation scriptée de pipelines Jenkins, briques de code à destination des équipes. Support, formation et accompagnement des développeurs.',
-        certification: ''
-      },
-      {
         title: 'Java Spring Boot',
         category: 'Langages/frameworks',
-        logo: '',
+        logo: 'logos/spring.png',
         level: 4,
         description: 'Développement de backends dans le cadre scolaire (Project Management Tool, Innotech Votes, Games Up).',
         certification: ''
@@ -162,7 +138,7 @@ export class CompetenciesService {
       {
         title: 'Angular',
         category: 'Langages/frameworks',
-        logo: '',
+        logo: 'logos/angular.png',
         level: 4,
         description: 'Développement d\'interfaces dans le cadre scolaire (Project Management Tool, Innotech Votes, Portfolio personnel)',
         certification: ''
@@ -170,7 +146,7 @@ export class CompetenciesService {
       {
         title: 'Alexa Skills',
         category: 'Langages/frameworks',
-        logo: '',
+        logo: 'logos/alexa.png',
         level: 4,
         description: 'Développement d\'une skill Alexa pour la gestion de cave en ligne (https://www.macaveamoi.fr). Interactions avec la cave par la voix, gestion des stocks, sorties de cave, recherche de bouteilles, consultations des statistiques de consommation. Algorithmes phonex, distance de Levenshtein.',
         certification: ''
@@ -178,119 +154,119 @@ export class CompetenciesService {
       {
         title: 'QuasarJS',
         category: 'Langages/frameworks',
-        logo: '',
+        logo: 'logos/quasar.png',
         level: 4,
         description: 'Développement et administration d\'un site web de gestion de cave en ligne (https://www.macaveamoi.fr)',
         certification: ''
       },
       {
+        title: 'Cypress',
+        category: 'Outils',
+        logo: 'logos/cypress.png',
+        level: 5,
+        description: 'Implémentation de tests d\'interface automatisés, simulation de parcours utilisateur',
+        certification: 'Advanced Cypress Professional'
+      },
+      {
         title: 'Gitlab',
-        category: 'Tools',
-        logo: '',
+        category: 'Outils',
+        logo: 'logos/gitlab.png',
         level: 5,
         description: 'Utilisation professionnelle quotidienne, accompagnement et formation des utilisateurs',
         certification: 'Gitlab Practitioner'
       },
       {
         title: 'VSCode',
-        category: 'Tools',
-        logo: '',
+        category: 'Outils',
+        logo: 'logos/vscode.png',
         level: 4,
         description: 'Utilisation régulière, refactoring, debug/tracing, tests',
         certification: ''
       },
       {
         title: 'JetBrains Suite',
-        category: 'Tools',
-        logo: '',
+        category: 'Outils',
+        logo: 'logos/jetbrains.png',
         level: 4,
         description: 'Utilisation régulière, refactoring, debug/tracing, tests',
         certification: ''
       },
       {
         title: 'GitHub',
-        category: 'Tools',
-        logo: '',
+        category: 'Outils',
+        logo: 'logos/github.png',
         level: 5,
         description: 'Utilisation régulière, forks, pull requests, issues, actions',
         certification: ''
       },
       {
         title: 'AWS',
-        category: 'Tools',
-        logo: '',
+        category: 'Outils',
+        logo: 'logos/aws.png',
         level: 5,
         description: 'Utilisation professionnelle quotidienne',
         certification: 'AWS Developer Associate'
       },
       {
         title: 'Docker',
-        category: 'Tools',
-        logo: '',
+        category: 'Outils',
+        logo: 'logos/docker.png',
         level: 5,
         description: 'Création de conteneurs, réseaux, volumes, construction d\'images, publication, déploiement, docker-compose',
         certification: ''
       },
       {
         title: 'Kubernetes',
-        category: 'Tools',
-        logo: '',
+        category: 'Outils',
+        logo: 'logos/kubernetes.png',
         level: 4,
         description: 'Développement et déploiement de cronjobs, pods, deployments, services. Gestion des ressources : réservations, limites, autoscaling',
         certification: ''
       },
       {
         title: 'Datadog',
-        category: 'Tools',
-        logo: '',
+        category: 'Outils',
+        logo: 'logos/datadog.png',
         level: 4,
         description: 'Création de dashboards, envoi de métriques/logs, monitors et alertes automatiques',
         certification: ''
       },
       {
         title: 'PowerBI',
-        category: 'Tools',
-        logo: '',
+        category: 'Outils',
+        logo: 'logos/powerbi.png',
         level: 5,
         description: 'Récupération et traitement de données pour reporting, création de dashboards, développement de métriques et colonnes custom (DAX)',
         certification: ''
       },
       {
         title: 'Jenkins',
-        category: 'Tools',
-        logo: '',
+        category: 'Outils',
+        logo: 'logos/jenkins.png',
         level: 5,
         description: 'Utilisation et administration, développement de scripts et pipelines complexes, gestion des secrets, parcs de runners dynamiques, formation et accompagnement des utilisateurs',
         certification: ''
       },
       {
         title: 'JIRA',
-        category: 'Tools',
-        logo: '',
+        category: 'Outils',
+        logo: 'logos/jira.png',
         level: 5,
         description: 'Utilisation et administration, gestion des projets, des sprints, des backlogs, des tickets, des workflows, des permissions, des tableaux de bord, formation et accompagnement des utilisateurs',
         certification: ''
       },
       {
         title: 'OWASP Dependency Track',
-        category: 'Tools',
-        logo: '',
+        category: 'Outils',
+        logo: 'logos/dtrack.png',
         level: 4,
         description: 'Utilisation et administration, gestion des projets, des dépendances, des vulnérabilités, des licences, intégration dans les pipelines de CI, formation et accompagnement des utilisateurs',
         certification: ''
       },
       {
-        title: 'Neoload',
-        category: 'Tools',
-        logo: '',
-        level: 4,
-        description: 'Implémentation de tests de performance, suivi de la charge, analyse des résultats, intégration dans les pipelines de CI. Recommandations RAM/CPU et optimisation de la scalabilité de la solution logicielle',
-        certification: ''
-      },
-      {
         title: 'Sonarqube',
-        category: 'Tools',
-        logo: '',
+        category: 'Outils',
+        logo: 'logos/sonarqube.png',
         level: 5,
         description: 'Utilisation et administration, gestion des profils et barrières qualité, intégration dans les pipelines de CI, formation et accompagnement des utilisateurs',
         certification: ''
@@ -298,7 +274,7 @@ export class CompetenciesService {
       {
         title: 'Anglais',
         category: 'Langues',
-        logo: '',
+        logo: 'logos/UK.png',
         level: 4,
         description: 'Pratique professionnelle quotidienne, rédaction de documentation, participation à des réunions internationales, rédaction de mails, rédaction de rapports',
         certification: 'C1 > C1+'
@@ -306,7 +282,7 @@ export class CompetenciesService {
       {
         title: 'Allemand',
         category: 'Langues',
-        logo: '',
+        logo: 'logos/DE.png',
         level: 3,
         description: 'Pratique occasionelle dans un contexte personnel ou informel',
         certification: ''
@@ -314,7 +290,7 @@ export class CompetenciesService {
       {
         title: 'Turc',
         category: 'Langues',
-        logo: '',
+        logo: 'logos/TR.png',
         level: 3,
         description: 'Pratique occasionelle dans un contexte personnel ou informel',
         certification: ''
