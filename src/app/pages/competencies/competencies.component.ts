@@ -1,6 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { CompetenciesService } from '../../services/competencies.service';
-
 @Component({
   selector: 'app-competencies',
   templateUrl: './competencies.component.html',
