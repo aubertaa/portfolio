@@ -3,6 +3,7 @@
 .card {
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
 }
 
 .card:hover {
@@ -67,7 +68,7 @@
 }
 
 .card-footer {
-    color: goldenrod;
+    color: #ffc107;
 }
 
 .card-body {
@@ -99,11 +100,6 @@
 .category-title {
     font-size: 1.8rem;
     font-weight: bold;
-    color: white;
-}
-
-.category-title .light-theme {
-    color: #333;
 }
 
 /* Styling for the card when it's selected */
@@ -140,13 +136,10 @@
     justify-content: center;
     align-items: center;
     background: rgba(0, 0, 0, 0.5);
-    /* Semi-transparent background */
     z-index: 1050;
     visibility: visible;
     opacity: 1;
-    /* Initially invisible */
     transition: visibility 0s, opacity 0.3s ease-in-out;
-    /* Smooth fade-in/out */
 }
 
 .popin-content {
@@ -198,4 +191,64 @@
 
 .popin-footer .btn:hover {
     background-color: #0056b3;
+}
+
+/* Style for the toggle switch *//* Custom size for the switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    /* Reduced width */
+    height: 20px;
+    /* Reduced height */
+    margin-left: 10px;
+}
+
+/* Hide the default checkbox input */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* Slider styles */
+.switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* Slider before element (circle) */
+.switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 12px;
+    /* Adjusted size */
+    width: 12px;
+    /* Adjusted size */
+    border-radius: 50%;
+    left: 4px;
+    /* Center it inside the track */
+    bottom: 4px;
+    /* Align it vertically */
+    background-color: white;
+    transition: 0.4s;
+}
+
+/* When the checkbox is checked */
+input:checked+.slider {
+    background-color: #4CAF50;
+    /* Green background when checked */
+}
+
+/* When the checkbox is checked, move the circle */
+input:checked+.slider:before {
+    transform: translateX(20px);
+    /* Move the circle to the right */
 }

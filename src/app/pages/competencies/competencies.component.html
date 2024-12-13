@@ -1,10 +1,22 @@
 <app-header></app-header>
 <div class="container mt-4">
+  
+    <!-- Toggle Filter: On/Off aligned to the right -->
+    <div class="col-md-12 d-flex justify-content-end align-items-center mb-4">
+      <span class="mr-2">Voir seulement les compétences certifiées</span>
+      <label class="switch">
+        <input type="checkbox" [(ngModel)]="showCertifiedOnly" (change)="filterCompetencies()">
+        <span class="slider round"></span>
+      </label>
+    </div>
+
+
   <div *ngFor="let category of categories">
-    <section class="category-section mb-5">
+    <section class="category-section mb-5"
+    *ngIf="getCompetencies(category).length > 0"
+    >
       <div class="text-center mb-4">
         <h3 class="category-title text-center">{{ category }}</h3>
-        <em>(Cliquez pour une description détaillée)</em>
       </div>
       <div class="row">
         <div
@@ -72,13 +84,6 @@
         </div>
       </div>
 
-      <!-- Description panel
-          <div class="col-md-6 description-panel-{{category}} text-center" *ngIf="selectedCompetency && selectedCategory == category">
-            <div class="description-card p-4 shadow-lg">
-              <h4 class="text-dark">Description : {{ selectedCompetency.title }}</h4>
-              <p class="text-muted">{{ selectedCompetency.description }}</p>
-            </div>
-          </div> -->
     </section>
   </div>
 </div>
