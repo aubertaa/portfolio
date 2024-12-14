@@ -7,7 +7,7 @@
 }
 
 .card:hover {
-    transform: translateY(-5px);
+    transform: scale(1.05);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
 
@@ -177,20 +177,7 @@
 
 .popin-footer {
     margin-top: 20px;
-    text-align: center;
-}
-
-.popin-footer .btn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.popin-footer .btn:hover {
-    background-color: #0056b3;
+    text-align: right;
 }
 
 /* Style for the toggle switch *//* Custom size for the switch */
