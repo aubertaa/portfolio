@@ -1,62 +1,74 @@
-<app-header></app-header>
-<div class="container mt-4">
-
-
-  <div *ngFor="let category of categories">
-    <section class="category-section mb-5">
-  <div class="text-center mb-4">
-        <h3 class="category-title text-center">{{ category }}</h3>
+<div class="layout">
+  <app-header></app-header>
+  <div class="content">
+    <div class="container mt-4">
+      <div *ngFor="let category of categories">
+        <section class="category-section mb-5">
+          <div class="text-center mb-4">
+            <h3 class="category-title text-center">{{ category }}</h3>
+          </div>
+          <div class="row">
+            <div
+              class="col-md-4 mb-4"
+              *ngFor="let book of getBooks(category)"
+              [ngClass]="{ 'card-selected': selectedBook === book }"
+            >
+              <div class="card h-100 shadow-lg" (click)="onBookClick(book)">
+                <!-- Book Title -->
+                <div class="card-body text-center">
+                  <h2 class="card-title mt-2 mb-0">{{ book.title }}</h2>
+                </div>
+                <!-- Book Cover -->
+                <div class="text-center">
+                  <img
+                    class="book-cover img-fluid"
+                    alt="{{ book.title }}"
+                    [src]="book.image || 'assets/default-cover.png'"
+                  />
+                </div>
+                <!-- Book Author -->
+                <div class="card-body text-center">
+                  <p class="text-muted small">{{ book.author }}</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
-      <div class="row">
-        <div class="col-md-4 mb-4" *ngFor="let book of getBooks(category)" [ngClass]="{ 'card-selected': selectedBook === book }">
-          <div class="card h-100 shadow-lg" (click)="onBookClick(book)">
-            
-            <!-- Book Title -->
-            <div class="card-body text-center">
-              <h2 class="card-title mt-2 mb-0">{{ book.title }}</h2>
-            </div>
+    </div>
+
+    <!-- Book Details Modal -->
+    <div class="modal-backdrop" *ngIf="showDetails" (click)="closeModal()">
+      <div class="modal-content" (click)="$event.stopPropagation()">
+        <div class="modal-header">
+          <div class="d-flex align-items-center w-100">
             <!-- Book Cover -->
-            <div class="text-center">
-              <img class="book-cover img-fluid" alt="{{ book.title }}" [src]="book.image || 'assets/default-cover.png'">
+            <div>
+              <img
+                class="book-cover-details img-fluid"
+                alt="{{ selectedBook.title }}"
+                [src]="selectedBook.image"
+              />
             </div>
-            <!-- Book Author -->
-            <div class="card-body text-center">
-              <p class="text-muted small">{{ book.author }}</p>
+            <!-- Title and Author -->
+            <div class="ml-3 w-100 title-author">
+              <h4 class="text-dark mb-1">{{ selectedBook.title }}</h4>
+              <p class="text-muted mb-0">{{ selectedBook.author }}</p>
             </div>
           </div>
         </div>
+
+        <div class="modal-body">
+          <p class="text-muted">{{ selectedBook.description }}</p>
+        </div>
+        <div class="modal-footer text-center">
+          <button class="btn btn-sm btn-secondary mt-2" (click)="closeModal()">
+            Fermer
+          </button>
+        </div>
       </div>
-    </section>
     </div>
-</div>
 
-<!-- Book Details Modal -->
-<div class="modal-backdrop" *ngIf="showDetails" (click)="closeModal()">
-  <div class="modal-content" (click)="$event.stopPropagation()">
-<div class="modal-header">
-  <div class="d-flex align-items-center w-100">
-    <!-- Book Cover -->
-    <div>
-      <img class="book-cover-details img-fluid" alt="{{ selectedBook.title }}" [src]="selectedBook.image">
-    </div>
-    <!-- Title and Author -->
-    <div class="ml-3 w-100 title-author">
-      <h4 class="text-dark mb-1">{{ selectedBook.title }}</h4>
-      <p class="text-muted mb-0">{{ selectedBook.author }}</p>
-    </div>
+    <app-footer></app-footer>
   </div>
 </div>
-
-
-    <div class="modal-body">
-      <p class="text-muted">{{ selectedBook.description }}</p>
-    </div>
-    <div class="modal-footer text-center">
-      <button class="btn btn-sm btn-secondary mt-2" (click)="closeModal()">
-        Fermer
-      </button>
-    </div>
-  </div>
-</div>
-
-<app-footer></app-footer>

@@ -1,21 +1,30 @@
-<app-header></app-header>
-<div class="home container">
-  <h1>Bienvenue sur mon Portfolio</h1>
-  <img class="profile-pic" src="AUBERTAlexandre.jpg" alt="Profile Picture">
-  <h1>Alexandre AUBERT</h1>
-  <h2>Head of software engineering</h2>
-  <div class="quick-links">
-    <div class="link-card" *ngFor="let section of sections">
-      <!-- Title and Description container -->
-      <div class="content">
-        <p>{{ section.description }}</p>
-      </div>
-      <!-- Button container aligned to the bottom -->
-      <div class="button-container">
-        <a class="btn btn-info" [routerLink]="section.link">{{ section.title }}</a>
+<div class="layout">
+  <app-header></app-header>
+  <div class="content">
+    <div class="home container">
+      <h1>Bienvenue sur mon Portfolio</h1>
+      <img
+        class="profile-pic"
+        src="AUBERTAlexandre.jpg"
+        alt="Profile Picture"
+      />
+      <h1>Alexandre AUBERT</h1>
+      <h2>Head of software engineering</h2>
+      <div class="quick-links">
+        <div class="link-card" *ngFor="let section of sections">
+          <!-- Title and Description container -->
+          <div class="content">
+            <p>{{ section.description }}</p>
+          </div>
+          <!-- Button container aligned to the bottom -->
+          <div class="button-container">
+            <a class="btn btn-info" [routerLink]="section.link">{{
+              section.title
+            }}</a>
+          </div>
+        </div>
       </div>
     </div>
+    <app-footer></app-footer>
   </div>
 </div>
-<app-footer></app-footer>
-

@@ -1,83 +1,79 @@
-/* You can add global styles to this file, and also import other style files */
-
-/* Importing Bootstrap SCSS file. */
+/* Global Styles */
 @import "https://bootswatch.com/5/sketchy/bootstrap.min.css";
-//@import 'bootstrap/scss/bootstrap';
 
-.profile-pic {
-    width: 225px;
-    height: 245px;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.link-card {
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.link-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.quick-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.quick-links .link-card {
-    margin: 10px;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    width: 200px;
-    text-align: center;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-}
-
-.page-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.home {
-    text-align: center;
-    padding: 50px 0;
-    flex: 1;
-}
-
-nav a {
-    margin: 0 10px;
-    text-decoration: none;
-    color: white;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden; /* Prevent scrolling of the entire page */
+  color: white; /* Default text color */
+  background-color: #333; /* Default background color */
 }
 
 body.light-theme {
-    background-color: #f9f9f9;
-    color: #333;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    color: white;
+/* Layout */
+.layout {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Full viewport height */
 }
 
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure full height for content */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1; /* Takes remaining space */
+  overflow-y: auto; /* Scrollable content */
+  padding: 20px;
+}
+
+.home {
+  text-align: center;
+  padding: 50px 0;
+}
+
+/* Profile Picture */
+.profile-pic {
+  width: 225px;
+  height: 245px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* Quick Links Section */
+.quick-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link-card {
+  margin: 10px;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.link-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Links */
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
 }

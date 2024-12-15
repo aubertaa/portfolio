@@ -1,32 +1,30 @@
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #333;
-    /* Optional background color */
-    border-top: 1px solid #ddd;
-    /* Optional border for separation */
-    font-size: 14px;
-    /* Adjust as needed */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed; /* Ensure footer stays at the bottom */
+  bottom: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #333;
+  border-top: 1px solid #ddd; /* Subtle separation line */
+  font-size: 14px; /* Adjust font size as needed */
+  color: #fff; /* Default text color */
 }
 
 .footer-left p {
-    margin: 0;
-    color: #fff;
-    /* Optional text color */
+  margin: 0;
 }
 
 .footer-right a {
-    margin-left: 15px;
-    color: #fff;
-    /* Optional icon color */
-    text-decoration: none;
-    font-size: 18px;
-    /* Adjust icon size */
+  margin-left: 15px;
+  margin-right: 25px;
+  color: #fff; /* Default link color */
+  text-decoration: none;
+  font-size: 18px; /* Adjust link/icon size */
+  transition: color 0.3s; /* Smooth hover transition */
 }
 
 .footer-right a:hover {
-    color: #007bff;
-    /* Change icon color on hover */
+  color: #007bff; /* Change color on hover */
 }
