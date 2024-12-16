@@ -61,6 +61,10 @@
         <div class="modal-body">
           <p class="text-muted">{{ selectedBook.description }}</p>
         </div>
+        
+        <div class="modal-body">
+          <p class="text-info">{{ "Mon avis : " + selectedBook.avis }}</p>
+        </div>
         <div class="modal-footer text-center">
           <button class="btn btn-sm btn-secondary mt-2" (click)="closeModal()">
             Fermer
