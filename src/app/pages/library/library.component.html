@@ -9,7 +9,7 @@
           </div>
           <div class="row">
             <div
-              class="col-md-4 mb-4"
+              class="col-md-3 mb-4"
               *ngFor="let book of getBooks(category)"
               [ngClass]="{ 'card-selected': selectedBook === book }"
             >
@@ -41,7 +41,7 @@
     <div class="modal-backdrop" *ngIf="showDetails" (click)="closeModal()">
       <div class="modal-content" (click)="$event.stopPropagation()">
         <div class="modal-header">
-          <div class="d-flex align-items-center w-100">
+          <div class="d-flex align-items-center w-100 text-center">
             <!-- Book Cover -->
             <div>
               <img
@@ -54,6 +54,11 @@
             <div class="ml-3 w-100 title-author">
               <h4 class="text-dark mb-1">{{ selectedBook.title }}</h4>
               <p class="text-muted mb-0">{{ selectedBook.author }}</p>
+            </div>
+            
+            <!-- Book Cover -->
+            <div>
+              <img class="book-cover-details img-fluid" alt="{{ selectedBook.title }}" [src]="selectedBook.image">
             </div>
           </div>
         </div>
