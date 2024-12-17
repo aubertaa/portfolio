@@ -40,12 +40,16 @@ export class ProjectsService {
         date: '2023',
         domaine: 'Stratégie d\'entreprise',
         involved_competencies: [
-          "",
-          ""
+          "PowerBI",
+          "Management",
+          "Python",
+          "JIRA",
+          "Gitlab",
+          "Sonarqube"
         ],
         image: '',
-        documents: [''],
-        description: ''
+        documents: ['assets/documents/Measuring our efficiency.pdf'],
+        description: "Définition des indicateurs de l'efficacité de la production logicielle de l'entreprise autour de 4 axes principaux : la vitesse de production, la qualité de nos livrables, les cadences des équipes, la prédictabilité des livraisons. Le suivi de ces indicateurs est assuré via PowerBI (rapports non publics), exploitant de la donnée issue des outils de la chaine de production logicielle via des scripts python."
       },
       {
         title: 'Backoffice utils',
@@ -57,31 +61,22 @@ export class ProjectsService {
           "Gitlab",
           "Sonarqube"
         ],
-        image: '',
+        image: 'assets/images/backoffice_utils.png',
         documents: [''],
         description: 'Nombreux scripts de backoffice pour automatiser des tâches récurrentes: suppression de projets obsolètes (sonarqube), archivage automatique de repositories / contrôle des expirations de tokens (gitlab), alerting quotidien / hebdomadaire (respect des pratiques ISO27001, surveillance des environnements internes), extraction de données (JIRA, Gitlab, Sonarqube).'
-      },
-      {
-        title: 'Suivi / dashboarding des coûts cloud',
-        date: '2022',
-        domaine: 'Stratégie d\'entreprise',
-        involved_competencies: [
-          "",
-          ""
-        ],
-        image: '',
-        documents: [''],
-        description: ''
       },
       {
         title: 'VolatileEC2',
         date: '2022',
         domaine: 'Développement',
         involved_competencies: [
-          "AWS"
+          "AWS",
+          "Docker",
+          "Kubernetes",
+          "Jenkins"
         ],
         image: '',
-        documents: [''],
+        documents: ['https://github.com/aubertaa/volEC2/'],
         description: 'Environnement pédagogique en InfraAsCode utilisé pour la formation des alternants aux pratiques et outils de la CI et DevOps. Déploiement d\'une infrastructure de développement logiciel en un clic.'
       },
       {
@@ -89,12 +84,12 @@ export class ProjectsService {
         date: '2020',
         domaine: 'Développement',
         involved_competencies: [
-          "",
-          ""
+          "Python",
+          "RGPD"
         ],
-        image: '',
+        image: 'assets/images/hitmaker.png',
         documents: [''],
-        description: 'Génération de jeux de données de tests aléatoires, simulation de données réelles.'
+        description: "Génération de jeux de données de tests aléatoires, simulation de données réelles. Les données sont utilisées par les équipes de développement pour les phases de R&D, développement et tests. Ces envois de données 'intelligents' permettent de ne pas utiliser de données clients réelles, et de ne pas dépendre de jeux de données statiques qui seraient trop figés et peu réalistes. La conformité RGPD de notre activité est ainsi respectée."
       },
       {
         title: 'MaCaveAMoi',
@@ -106,7 +101,7 @@ export class ProjectsService {
         ],
         image: '',
         documents: [''],
-        description: 'Logiciel de gestion de cave en ligne : disponible sur le web, mobile (Android Play Store) et sur Alexa.'
+        description: "MaCaveAMoi est un logiciel de gestion de cave en ligne : disponible sur le web, mobile (Android Play Store) et sur Alexa (assistant vocal Amazon). Il permet de gérer sa cave à vin, de suivre ses dégustations, de partager ses découvertes et de découvrir de nouveaux vins. Les outils proposés sont simples et répondent aux besoins des amateurs de vin. Le Front est codé en QuasarJS, le Back en NodeJS/PHP, et l'API Alexa en NodeJS. (Site web : https://www.macaveamoi.fr/)"
       },
       {
         title: 'Déploiement de l\'intégration continue',
