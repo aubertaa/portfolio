@@ -168,6 +168,14 @@ export class CompetenciesService {
         certification: 'Advanced Cypress Professional'
       },
       {
+        title: 'SOAP UI',
+        category: 'Outils',
+        logo: 'logos/soap_ui.png',
+        level: 5,
+        description: 'Implémentation de tests d\'API automatisés, performance et sécurité',
+        certification: ''
+      },
+      {
         title: 'Gitlab',
         category: 'Outils',
         logo: 'logos/gitlab.png',
