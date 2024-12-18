@@ -15,12 +15,12 @@ export class ProjectsService {
         date: '2025',
         domaine: 'Stratégie d\'entreprise',
         involved_competencies: [
-          "",
-          ""
+          "Management",
+          "Gestion de projet"
         ],
-        image: '',
+        image: 'assets/images/unfix reorg.png',
         documents: [''],
-        description: ''
+        description: 'Réflexions et mise en place d\'une réorganisation des équipes de développement pour favoriser la résilience, la responsabilité et la performance des équipes. Certaines équipes sont regroupées en 3 pôles de développement, chacun ayant une mission claire et des objectifs spécifiques, en opposition à l\'organisation historique en équipe "composants". Cette organisation permet d\'avoir des équipes mieux résilientes (avec plus de membres) et plus dynamiques pour accueillir les incréments fonctionnels. L\'orientation vers une "chaîne de valeur client" est inspirée des Team Topologies et les réflexions ont été" soutenues par les éléments et la philosophie unFix (Jürgen Appelo). Ces changements ont été reçus positivement par les équipes historiques concernées et donnent satisfaction aux membres qui les composent.'
       },
       {
         title: 'Implémentation et suivi des métriques DORA',
@@ -31,9 +31,9 @@ export class ProjectsService {
           "Python",
           "CI/CD"
         ],
-        image: '',
+        image: 'assets/images/KPIs.png',
         documents: [''],
-        description: ''
+        description: 'Extraction et suivi des métriques du cycle de développement logiciel (DORA) pour mesurer l\'efficacité de notre chaîne de production logicielle. Les métriques sont extraites des outils de la chaîne de production logicielle (JIRA, Gitlab, Sonarqube) via des scripts python, et sont agrégées et visualisées via PowerBI. Les métriques sont suivies sur le long terme pour mesurer l\'impact des actions d\'amélioration continue. Les points de contention du workflow sont identifiés et des actions d\'amélioration peuvent être mises en place.'
       },
       {
         title: 'Définition et mesure de l\'efficacité de notre chaîne de développement logicielle',
@@ -63,11 +63,24 @@ export class ProjectsService {
         ],
         image: 'assets/images/backoffice_utils.png',
         documents: [''],
-        description: 'Nombreux scripts de backoffice pour automatiser des tâches récurrentes: suppression de projets obsolètes (sonarqube), archivage automatique de repositories / contrôle des expirations de tokens (gitlab), alerting quotidien / hebdomadaire (respect des pratiques ISO27001, surveillance des environnements internes), extraction de données (JIRA, Gitlab, Sonarqube).'
+        description: 'Nombreux scripts de backoffice pour automatiser des tâches récurrentes: suppression de projets obsolètes (sonarqube), archivage automatique de repositories / contrôle des expirations de tokens (gitlab), alerting quotidien / hebdomadaire (respect des pratiques ISO27001, surveillance des environnements internes)...'
+      },
+      {
+        title: 'Obtention de la certification d\'entreprise ISO 27001',
+        date: '2021',
+        domaine: 'Développement',
+        involved_competencies: [
+          "CI/CD",
+          "Management",
+          "Gestion de projet"
+        ],
+        image: 'assets/images/ISO.png',
+        documents: ['assets/documents/ISO27001.pdf'],
+        description: 'Accompagnement des équipes dans la mise en place des pratiques de sécurité nécessaires pour obtenir la certification ISO 27001. Définition des objectifs, des pratiques et des outils à mettre en place : gestion des risques, des vulnérabilités, des configurations, des changements. Déploiement et contrôle des pratiques de sécurité, adaptations du processus de développement et formation des développeurs. Participation aux audits internes et externes, suivi des actions correctives et préventives.'
       },
       {
         title: 'VolatileEC2',
-        date: '2022',
+        date: '2021',
         domaine: 'Développement',
         involved_competencies: [
           "AWS",
