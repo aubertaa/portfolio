@@ -23,6 +23,56 @@ export class ProjectsService {
         description: 'Réflexions et mise en place d\'une réorganisation des équipes de développement pour favoriser la résilience, la responsabilité et la performance des équipes. Certaines équipes sont regroupées en 3 pôles de développement, chacun ayant une mission claire et des objectifs spécifiques, en opposition à l\'organisation historique en équipe "composants". Cette organisation permet d\'avoir des équipes mieux résilientes (avec plus de membres) et plus dynamiques pour accueillir les incréments fonctionnels. L\'orientation vers une "chaîne de valeur client" est inspirée des Team Topologies et les réflexions ont été" soutenues par les éléments et la philosophie unFix (Jürgen Appelo). Ces changements ont été reçus positivement par les équipes historiques concernées et donnent satisfaction aux membres qui les composent.'
       },
       {
+        title: 'GamesUp',
+        date: '2024',
+        domaine: 'Développement',
+        involved_competencies: [
+          "Python",
+          "Docker"
+        ],
+        image: '',
+        documents: ['https://github.com/aubertaa/recommandation-api'],
+        description: 'API de recommandation de jeux vidéos basée sur des données de jeux vidéos et des avis utilisateurs. L\'API est déployée dans un conteneur Docker et est accessible via une interface REST. Elle permet de recommander des jeux vidéos en fonction de critères de recherche (genre, plateforme, prix, etc.). L\'algorithme de recommandation est du type KNN (K-Nearest Neighbors).'
+      },
+      {
+        title: 'GamesUp',
+        date: '2024',
+        domaine: 'Développement',
+        involved_competencies: [
+          "Java Spring Boot",
+          "Docker"
+        ],
+        image: '',
+        documents: ['https://github.com/aubertaa/gamesUp'],
+        description: 'Backend en Java Spring Boot exposant une API REST pour une application de vente en ligne de jeux vidéos : catalogue de jeux, gestion des stocks, commandes et avis utilisateurs.'
+      },
+      {
+        title: 'Innotech Votes',
+        date: '2024',
+        domaine: 'Développement',
+        involved_competencies: [
+          "Java Spring Boot",
+          "Angular",
+          "Docker"
+        ],
+        image: '',
+        documents: ['https://github.com/aubertaa/innotech-votes'],
+        description: 'Application d\'émargement : première version simple permettant aux utilisateurs enregistrés de voter lors \'un scrutin. Le projet est réalisé en Java Spring Boot pour le back, et en Angular pour le front.'
+      },
+      {
+        title: 'P.M.T. Project Management Tool',
+        date: '2024',
+        domaine: 'Développement',
+        involved_competencies: [
+          "Java Spring Boot",
+          "Angular",
+          "Docker"
+        ],
+        image: '',
+        documents: ['https://github.com/aubertaa/pmt'],
+        description: 'Application de gestion de projets permettant de créer des projets, des tâches et de les suivre, créer des utilisateurs et leur assigner des tâches. Le projet est réalisé en Java Spring Boot pour le back, et en Angular pour le front.'
+      },
+      {
         title: 'Implémentation et suivi des métriques DORA',
         date: '2024',
         domaine: 'Stratégie d\'entreprise',
