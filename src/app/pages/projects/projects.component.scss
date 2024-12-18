@@ -39,11 +39,11 @@
 }
 
 .timeline-item .timeline-content.left {
-  left: -47%;
+  left: -49%;
 }
 
 .timeline-item .timeline-content.right {
-  right: 3%;
+  right: 2%;
 }
 
 .timeline-content::after {
@@ -62,43 +62,85 @@
   border-color: transparent transparent transparent #fff;
 }
 
-  .timeline-content.right::after {
-    left: -10px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent #fff transparent transparent;
-  }
+.timeline-content.right::after {
+  left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+}
 
-  .timeline-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
+.timeline-header {
+  text-align:center;
+}
+
+.timeline-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.timeline-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.timeline-meta.reverse {
+  flex-direction: row-reverse;
+}
 
 .timeline-date {
-  font-size: 14px;
-  color: #666;
+  color: #007bff;
   margin-bottom: 10px;
 }
 
-  .timeline-domain {
-    font-size: 14px;
-    color: #007bff;
-    margin-bottom: 10px;
-  }
+.timeline-domain {
+  color: #007bff;
+  margin-bottom: 10px;
+}
 
-  .timeline-competencies {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 10px 0;
-  }
+.timeline-competencies {
+  display: flex;
+  justify-content: center; /* Center badges horizontally */
+  flex-wrap: wrap;
+  padding-top: 30px;
+  border-radius: 5px;
+}
 
-  .timeline-competencies li {
-    font-size: 14px;
-    color: #555;
-  }
+.competency-badge {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 5px; /* Adjusted margin for better spacing */
+  font-size: 14px;
+}
 
-  .timeline-description {
-    font-size: 14px;
-    color: #333;
-  }
+.timeline-description {
+  font-size: 14px;
+  color: #333;
+}
+
+.timeline-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.timeline-documents {
+  margin-top: 10px;
+  justify-content: right;
+  display: flex;
+}
+
+.timeline-document-link {
+  display: inline-block;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.timeline-document-link:hover {
+  text-decoration: underline;
+}
