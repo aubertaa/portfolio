@@ -4,6 +4,10 @@
   max-height: 80vh; /* Set a maximum height for the container */
 }
 
+.timeline-body {
+    text-align: center;
+}
+
 .timeline {
   display: flex;
   flex-direction: column;
@@ -123,6 +127,7 @@
 
 .timeline-image {
   width: 100%;
+  max-width:700px;
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
