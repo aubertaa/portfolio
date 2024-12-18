@@ -1,24 +1,30 @@
 <div class="layout">
   <app-header></app-header>
 
-
-
   <div class="timeline-container">
-  <div class="timeline">
-    <div class="timeline-item" *ngFor="let project of getProjects(); let i = index">
-      <div class="timeline-content" [ngClass]="{'left': i % 2 === 0, 'right': i % 2 !== 0}">
-        <h3 class="timeline-title">{{ project.title }}</h3>
-        <p class="timeline-date">{{ project.date }}</p>
-        <p class="timeline-domain">Domaine: {{ project.domaine }}</p>
-        <ul class="timeline-competencies" *ngIf="project.involved_competencies.length">
-          <li *ngFor="let competency of project.involved_competencies">{{ competency }}</li>
-        </ul>
-        <p class="timeline-description" *ngIf="project.description">{{ project.description }}</p>
+    <div class="timeline">
+      <div class="timeline-item" *ngFor="let project of getProjects(); let i = index">
+        <div class="timeline-content" [ngClass]="{'left': i % 2 === 0, 'right': i % 2 !== 0}">
+          <div class="timeline-header">
+            <h3 class="timeline-title">{{ project.title }}</h3>
+            <p class="timeline-date">{{ project.date }}</p>
+          </div>
+          <div class="timeline-body">
+            <p class="timeline-domain">{{ project.domaine }}</p>
+            <img *ngIf="project.image" [src]="project.image" alt="{{ project.title }} image" class="timeline-image">
+            <p class="timeline-description" *ngIf="project.description">{{ project.description }}</p>
+            <div class="timeline-documents" *ngIf="project.documents.length">
+              <a *ngFor="let document of project.documents" [href]="document" target="_blank" class="timeline-document-link">View Document</a>
+            </div>
+
+            <div class="timeline-competencies" *ngIf="project.involved_competencies.length">
+              <span *ngFor="let competency of project.involved_competencies" class="competency-badge">{{ competency }}</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-    <app-footer></app-footer>
-  
 
+  <app-footer></app-footer>
 </div>
