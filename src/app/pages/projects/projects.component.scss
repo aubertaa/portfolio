@@ -1,171 +1,107 @@
-.timeline-container {
-  padding: 20px;
-  overflow-y: auto; /* Enable vertical scrolling */
-  max-height: 80vh; /* Set a maximum height for the container */
-}
-.timeline-container {
-  padding: 20px;
-  overflow-y: auto; /* Enable vertical scrolling */
-  max-height: 80vh; /* Set a maximum height for the container */
-}
 
-.timeline {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 90%;
-  margin: 0 auto;
-}
+  .timeline-container {
+    padding: 20px;
+    overflow-y: auto;
+    max-height: 80vh;
+    background-color: #f8f9fa;
+  }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 2px;
-  background: #ccc;
-}
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+  }
 
-.timeline-item {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  margin: 20px 0;
-}
-.timeline-item {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  margin: 20px 0;
-}
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background: #ccc;
+  }
 
-.timeline-item .timeline-content {
-  width: 50%;
-  background: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
+  .timeline-item {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin: 20px 0;
+  }
 
-.timeline-item .timeline-content.left {
-  left: -47%;
-}
+  .timeline-item .timeline-content {
+    width: 45%;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
 
-.timeline-item .timeline-content.right {
-  right: 3%;
-}
+  .timeline-item .timeline-content.left {
+    left: -50%;
+  }
 
-.timeline-content::after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  top: 15px;
-  transform: translateY(-50%);
-}
+  .timeline-item .timeline-content.right {
+    right: -50%;
+  }
 
-.timeline-content.left::after {
-  right: -10px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent transparent #fff;
-}
-.timeline-content.left::after {
-  right: -10px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent transparent transparent #fff;
-}
+  .timeline-content::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 15px;
+    transform: translateY(-50%);
+  }
 
-.timeline-content.right::after {
-  left: -10px;
-  border-width: 10px;
-  border-style: solid;
-  border-color: transparent #fff transparent transparent;
-}
+  .timeline-content.left::after {
+    right: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent transparent #fff;
+  }
 
-.timeline-header {
-  text-align:center;
-}
+  .timeline-content.right::after {
+    left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent #fff transparent transparent;
+  }
 
-.timeline-title {
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: #666;
-}
+  .timeline-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #666;
+  }
 
-.timeline-meta {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  .timeline-date {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+  }
 
-.timeline-meta.reverse {
-  flex-direction: row-reverse;
-}
+  .timeline-domain {
+    font-size: 14px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
 
-.timeline-date {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 10px;
-}
-.timeline-date {
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 10px;
-}
+  .timeline-competencies {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+  }
 
-.timeline-domain {
-  font-size: 14px;
-  color: lightgrey;
-  margin-bottom: 10px;
-}
+  .timeline-competencies li {
+    font-size: 14px;
+    color: #555;
+  }
 
-.timeline-competencies {
-  display: flex;
-  justify-content: center; /* Center badges horizontally */
-  flex-wrap: wrap;
-  padding-top: 30px;
-  border-radius: 5px;
-}
-
-.competency-badge {
-  background-color: #007bff;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin: 5px; /* Adjusted margin for better spacing */
-  font-size: 14px;
-}
-
-.timeline-description {
-  font-size: 14px;
-  color: #333;
-}
-
-.timeline-image {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-}
-
-.timeline-documents {
-  margin-top: 10px;
-  justify-content: right;
-  display: flex;
-}
-
-.timeline-document-link {
-  display: inline-block;
-  margin-right: 10px;
-  color: #007bff;
-  text-decoration: none;
-}
-
-.timeline-document-link:hover {
-  text-decoration: underline;
-}
+  .timeline-description {
+    font-size: 14px;
+    color: #333;
+  }
