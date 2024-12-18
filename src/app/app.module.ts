@@ -11,7 +11,6 @@ import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { TimelineComponent } from './components/timeline/timeline.component';
 
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { AchievementsComponent } from './pages/achievements/achievements.component';
@@ -28,7 +27,6 @@ import { FormsModule } from '@angular/forms';
     ContactComponent,
     HeaderComponent,
     FooterComponent,
-    TimelineComponent,
     AchievementsComponent,
     LibraryComponent
   ],
@@ -36,7 +34,7 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    FormsModule  
+    FormsModule
   ],
   providers: [
     provideAnimationsAsync()
