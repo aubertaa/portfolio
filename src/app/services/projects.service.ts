@@ -19,11 +19,11 @@ export class ProjectsService {
           "Gestion de projet"
         ],
         image: 'assets/images/unfix reorg.png',
-        documents: [''],
+        documents: ['assets/documents/orga_unfix.pptx'],
         description: 'Réflexions et mise en place d\'une réorganisation des équipes de développement pour favoriser la résilience, la responsabilité et la performance des équipes. Certaines équipes sont regroupées en 3 pôles de développement, chacun ayant une mission claire et des objectifs spécifiques, en opposition à l\'organisation historique en équipe "composants". Cette organisation permet d\'avoir des équipes mieux résilientes (avec plus de membres) et plus dynamiques pour accueillir les incréments fonctionnels. L\'orientation vers une "chaîne de valeur client" est inspirée des Team Topologies et les réflexions ont été" soutenues par les éléments et la philosophie unFix (Jürgen Appelo). Ces changements ont été reçus positivement par les équipes historiques concernées et donnent satisfaction aux membres qui les composent.'
       },
       {
-        title: 'GamesUp',
+        title: 'Recommandation API',
         date: '2024',
         domaine: 'Développement',
         involved_competencies: [
@@ -97,7 +97,7 @@ export class ProjectsService {
           "Gitlab",
           "Sonarqube"
         ],
-        image: '',
+        image: 'assets/images/Efficiency.png',
         documents: ['assets/documents/Measuring our efficiency.pdf'],
         description: "Définition des indicateurs de l'efficacité de la production logicielle de l'entreprise autour de 4 axes principaux : la vitesse de production, la qualité de nos livrables, les cadences des équipes, la prédictabilité des livraisons. Le suivi de ces indicateurs est assuré via PowerBI (rapports non publics), exploitant de la donnée issue des outils de la chaine de production logicielle via des scripts python."
       },
