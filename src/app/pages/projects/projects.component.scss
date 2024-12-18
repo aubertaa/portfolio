@@ -3,6 +3,11 @@
   overflow-y: auto; /* Enable vertical scrolling */
   max-height: 80vh; /* Set a maximum height for the container */
 }
+.timeline-container {
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 80vh; /* Set a maximum height for the container */
+}
 
 .timeline {
   display: flex;
@@ -22,6 +27,12 @@
   background: #ccc;
 }
 
+.timeline-item {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+  margin: 20px 0;
+}
 .timeline-item {
   display: flex;
   justify-content: flex-end;
@@ -61,6 +72,12 @@
   border-style: solid;
   border-color: transparent transparent transparent #fff;
 }
+.timeline-content.left::after {
+  right: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent transparent #fff;
+}
 
 .timeline-content.right::after {
   left: -10px;
@@ -89,6 +106,11 @@
   flex-direction: row-reverse;
 }
 
+.timeline-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
 .timeline-date {
   font-size: 14px;
   color: #666;
