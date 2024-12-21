@@ -10,6 +10,14 @@ header.light-theme {
   background-color: #f8f9fa;
 }
 
+header.light-theme nav a {
+  color: #343a40;
+}
+
+header.light-theme nav a:hover {
+  background-color: #e9ecef;
+}
+
 nav a {
   color: #ddd;
   padding: 10px 15px;
@@ -20,14 +28,6 @@ nav a {
 nav a:hover {
   color: #007bff;
   background-color: #444;
-}
-
-header.light-theme nav a {
-  color: #343a40;
-}
-
-header.light-theme nav a:hover {
-  background-color: #e9ecef;
 }
 
 button {

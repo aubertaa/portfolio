@@ -12,6 +12,11 @@
   color: #fff; /* Default text color */
 }
 
+
+.footer a {
+  color: #fff; /* Default text color */
+}
+
 .footer-left p {
   margin: 0;
 }
@@ -19,7 +24,6 @@
 .footer-right a {
   margin-left: 15px;
   margin-right: 25px;
-  color: #fff; /* Default link color */
   text-decoration: none;
   font-size: 18px; /* Adjust link/icon size */
   transition: color 0.3s; /* Smooth hover transition */
@@ -27,4 +31,14 @@
 
 .footer-right a:hover {
   color: #007bff; /* Change color on hover */
+}
+
+
+footer.light-theme {
+  background-color: #f8f9fa;
+  color: #343a40;
+}
+
+footer.light-theme a {
+  color: #343a40;
 }

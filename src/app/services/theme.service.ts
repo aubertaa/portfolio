@@ -10,10 +10,20 @@ export class ThemeService {
     toggleTheme (): void {
       this.isLightTheme = !this.isLightTheme;
       document.body.classList.toggle('light-theme', this.isLightTheme);
+
       const header = document.querySelector('header');
       if (header) {
         header.classList.toggle('light-theme', this.isLightTheme);
       }
-      
+      const footer = document.querySelector('footer');
+      if (footer) {
+        footer.classList.toggle('light-theme', this.isLightTheme);
+      }
+
+      //change favicon
+      const favicon = document.querySelector('link[rel="icon"]');
+      if (favicon) {
+        favicon.setAttribute('href', this.isLightTheme ? 'favicon-light.ico' : 'favicon.ico');
     }
+  }
 }
