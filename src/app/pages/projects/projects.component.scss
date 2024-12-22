@@ -1,7 +1,6 @@
 .timeline-container {
   padding: 20px;
   overflow-y: auto; /* Enable vertical scrolling */
-  max-height: 80vh; /* Set a maximum height for the container */
 }
 
 .timeline-body {
@@ -31,6 +30,7 @@
   justify-content: flex-end;
   position: relative;
   margin: 20px 0;
+  word-wrap: break-word;
 }
 
 .timeline-item .timeline-content {
@@ -142,6 +142,7 @@
   display: inline-block;
   margin-right: 10px;
   text-decoration: none;
+  padding: 10px;
 }
 
 .timeline-document-link:hover {

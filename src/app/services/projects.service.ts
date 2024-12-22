@@ -30,7 +30,7 @@ export class ProjectsService {
           "Python",
           "Docker"
         ],
-        image: '',
+        image: 'assets/images/recommandation.png',
         documents: [{ title: 'le dépôt', url: 'https://github.com/aubertaa/recommandation-api' }],
         description: 'API de recommandation de jeux vidéos basée sur des données de jeux vidéos et des avis utilisateurs. L\'API est déployée dans un conteneur Docker et est accessible via une interface REST. Elle permet de recommander des jeux vidéos en fonction de critères de recherche (genre, plateforme, prix, etc.). L\'algorithme de recommandation est du type KNN (K-Nearest Neighbors).'
       },
@@ -42,7 +42,7 @@ export class ProjectsService {
           "Java Spring Boot",
           "Docker"
         ],
-        image: '',
+        image: 'assets/images/gamesup.png',
         documents: [{ title: 'le dépôt', url: 'https://github.com/aubertaa/gamesUp' }],
         description: 'Backend en Java Spring Boot exposant une API REST pour une application de vente en ligne de jeux vidéos : catalogue de jeux, gestion des stocks, commandes et avis utilisateurs.'
       },
@@ -55,7 +55,7 @@ export class ProjectsService {
           "Angular",
           "Docker"
         ],
-        image: '',
+        image: 'assets/images/innotech.png',
         documents: [{ title: 'le dépôt', url: 'https://github.com/aubertaa/innotech-votes' }],
         description: 'Application d\'émargement : première version simple permettant aux utilisateurs enregistrés de voter lors \'un scrutin. Le projet est réalisé en Java Spring Boot pour le back, et en Angular pour le front.'
       },
@@ -68,7 +68,7 @@ export class ProjectsService {
           "Angular",
           "Docker"
         ],
-        image: '',
+        image: 'assets/images/PMT.png',
         documents: [{ title: 'le dépôt', url: 'https://github.com/aubertaa/pmt' }],
         description: 'Application de gestion de projets permettant de créer des projets, des tâches et de les suivre, créer des utilisateurs et leur assigner des tâches. Le projet est réalisé en Java Spring Boot pour le back, et en Angular pour le front.'
       },
@@ -138,7 +138,7 @@ export class ProjectsService {
           "Kubernetes",
           "Jenkins"
         ],
-        image: '',
+        image: 'assets/images/volatileEC2.png',
         documents: [{ title: 'le dépôt', url: 'https://github.com/aubertaa/volEC2/' }],
         description: 'Environnement pédagogique en InfraAsCode utilisé pour la formation des alternants aux pratiques et outils de la CI et DevOps. Déploiement d\'une infrastructure de développement logiciel en un clic.'
       },
@@ -162,9 +162,9 @@ export class ProjectsService {
           "QuasarJS",
           "Alexa Skills"
         ],
-        image: '',
+        image: 'assets/images/mcam.png',
         documents: [{ title: 'le site web', url: 'https://www.macaveamoi.fr' }],
-        description: "MaCaveAMoi est un logiciel de gestion de cave en ligne : disponible sur le web, mobile (Android Play Store) et sur Alexa (assistant vocal Amazon). Il permet de gérer sa cave à vin, de suivre ses dégustations, de partager ses découvertes et de découvrir de nouveaux vins. Les outils proposés sont simples et répondent aux besoins des amateurs de vin. Le Front est codé en QuasarJS, le Back en NodeJS/PHP, et l'API Alexa en NodeJS. (Site web : https://www.macaveamoi.fr/)"
+        description: "MaCaveAMoi est un logiciel de gestion de cave en ligne : disponible sur le web, mobile (Android Play Store) et sur Alexa (assistant vocal Amazon). Il permet de gérer sa cave à vin, de suivre ses dégustations, de partager ses découvertes et de découvrir de nouveaux vins. Les outils proposés sont simples et répondent aux besoins des amateurs de vin. Le Front est codé en QuasarJS, le Back en NodeJS/PHP, et l'API Alexa en NodeJS."
       },
       {
         title: 'Déploiement de l\'intégration continue',
@@ -175,7 +175,7 @@ export class ProjectsService {
           "DevOps",
           "Management"
         ],
-        image: '',
+        image: 'assets/images/CI.png',
         documents: [{ title: 'la présentation du bilan', url: 'assets/documents/2018 bilan with first steps.pptx' }],
         description: "Définition d'objectifs clairs de mise en place de l'intégration continue dans les équipes de développement. Définition des pratiques et des outils à mettre en place : build/TU automatisés, déploiement automatisé, tests de no non régression, mécaniques de promotion des livrables. Suivi et accompagnement des équipes pour la mise en place effective. Diffusion d'une culture DevOps et d'une culture de l'amélioration continue."
       },
@@ -228,7 +228,7 @@ export class ProjectsService {
           "Membre d'équipe Agile",
           "Pratiques de tests logiciels"
         ],
-        image: '',
+        image: 'assets/images/galathee.png',
         documents: [],
         description: "Implémentation de tests de non régression pour un backend de stockage de données dans le cloud. Suivi, alimentation de la roadmap et recette des versions de l'outil de test (Galathee) développé sur mesure. Environ 100 000 cas de tests implémentés seul, parallélisation des exécutions et suivi des référentiels de données."
       }
