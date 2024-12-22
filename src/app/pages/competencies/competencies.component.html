@@ -6,39 +6,23 @@
       <div class="col-md-12 d-flex justify-content-end align-items-center mb-4">
         <span class="mr-2">Voir seulement les compétences certifiées</span>
         <label class="switch">
-          <input
-            type="checkbox"
-            [(ngModel)]="showCertifiedOnly"
-            (change)="filterCompetencies()"
-          />
+          <input type="checkbox" [(ngModel)]="showCertifiedOnly" (change)="filterCompetencies()">
           <span class="slider round"></span>
         </label>
       </div>
 
       <div *ngFor="let category of categories">
-        <section
-          class="category-section mb-5"
-          *ngIf="getCompetencies(category).length > 0"
-        >
+        <section class="category-section mb-5" *ngIf="getCompetencies(category).length > 0">
           <div class="text-center mb-4">
             <h3 class="category-title text-center">{{ category }}</h3>
           </div>
           <div class="row">
-            <div
-              class="col-md-3 mb-4"
-              *ngFor="let competency of getCompetencies(category)"
-              [ngClass]="{ 'card-clicked': selectedCompetency === competency }"
-            >
-              <div
-                class="card h-100 shadow-lg"
-                (click)="onCardClick(category, competency)"
-              >
+            <div class="col-md-3 mb-4" *ngFor="let competency of getCompetencies(category)" [ngClass]="{ 'card-clicked': selectedCompetency === competency }">
+              <div class="card h-100 shadow-lg" (click)="onCardClick(category, competency)">
                 <!-- Category at the top-right -->
-                <div
-                  class="top-0 m-1 badge badge-{{
+                <div class="top-0 m-1 badge badge-{{
                     competency.category.replace('/', '-').replace(' ', '-') | lowercase
-                  }} text-white"
-                >
+                  }} text-white">
                   {{ competency.category }}
                 </div>
 
@@ -51,40 +35,18 @@
                 </div>
 
                 <div class="logo-container mb-3 mt-3 text-center">
-                  <img
-                    class="category-logo img-fluid"
-                    alt="{{ competency.category }} logo"
-                    [src]="competency.logo"
-                  />
+                  <img class="category-logo img-fluid" alt="{{ competency.category }} logo" [src]="competency.logo">
                 </div>
 
                 <div class="card-footer text-center border-0">
                   <!-- Certification Icon -->
-                  <div
-                    class="bg-transparent border-0 text-right"
-                    *ngIf="competency.certification != ''"
-                  >
-                    <i
-                      class="fas fa-medal text-warning"
-                      *ngIf="competency.certification"
-                      [attr.title]="'Certified : ' + competency.certification"
-                    >
-                      Certified</i
-                    >
+                  <div class="bg-transparent border-0 text-right" *ngIf="competency.certification != ''">
+                    <i class="fas fa-medal text-warning" *ngIf="competency.certification" [attr.title]="'Certified : ' + competency.certification">
+                      Certified</i>
                   </div>
-                  <div
-                    class="level-stars"
-                    *ngIf="competency.certification == ''"
-                  >
-                    <ng-container
-                      *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
-                    >
-                      <i
-                        class="fas"
-                        [class.fa-star]="i < competency.level"
-                        [class.fa-star-half-alt]="i === competency.level - 0.5"
-                        [class.fa-star-o]="i >= competency.level"
-                      ></i>
+                  <div class="level-stars" *ngIf="competency.certification == ''">
+                    <ng-container *ngFor="let star of [1, 2, 3, 4, 5]; let i = index">
+                      <i class="fas" [class.fa-star]="i < competency.level" [class.fa-star-half-alt]="i === competency.level - 0.5" [class.fa-star-o]="i >= competency.level"></i>
                     </ng-container>
                   </div>
                 </div>
@@ -99,18 +61,12 @@
     <div class="popin-modal" *ngIf="showDescription" (click)="closeModal()">
       <div class="popin-content" (click)="$event.stopPropagation()">
         <div class="popin-header">
-          <img
-            class="category-logo img-fluid"
-            alt="{{ selectedCompetency.category }} logo"
-            [src]="selectedCompetency.logo"
-          />
+          <img class="category-logo img-fluid" alt="{{ selectedCompetency.category }} logo" [src]="selectedCompetency.logo">
 
           <h4 class="text-dark">{{ selectedCompetency.title }}</h4>
-          <div
-            class="top-0 m-1 badge badge-descr badge-{{
+          <div class="top-0 m-1 badge badge-descr badge-{{
               selectedCompetency.category.replace('/', '-').replace(' ', '-') | lowercase
-            }} text-white"
-          >
+            }} text-white">
             {{ selectedCompetency.category }}
           </div>
         </div>
@@ -118,28 +74,12 @@
           <p class="text-muted" [innerHTML]="selectedCompetency.description | newlineToBr"></p>
         </div>
         <div class="popin-footer">
-          <div
-            class="bg-transparent border-0 text-center"
-            *ngIf="selectedCompetency.certification != ''"
-          >
-            <i
-              class="fas fa-medal text-warning"
-              *ngIf="selectedCompetency.certification"
-              [attr.title]="'Certified : ' + selectedCompetency.certification"
-              >{{ " Certified " + selectedCompetency.certification }}</i
-            >
+          <div class="bg-transparent border-0 text-center" *ngIf="selectedCompetency.certification != ''">
+            <i class="fas fa-medal text-warning" *ngIf="selectedCompetency.certification" [attr.title]="'Certified : ' + selectedCompetency.certification">{{ " Certified " + selectedCompetency.certification }}</i>
           </div>
-          <div
-            class="level-stars text-center"
-            *ngIf="selectedCompetency.certification == ''"
-          >
+          <div class="level-stars text-center" *ngIf="selectedCompetency.certification == ''">
             <ng-container *ngFor="let star of [1, 2, 3, 4, 5]; let i = index">
-              <i
-                class="fas"
-                [class.fa-star]="i < selectedCompetency.level"
-                [class.fa-star-half-alt]="i === selectedCompetency.level - 0.5"
-                [class.fa-star-o]="i >= selectedCompetency.level"
-              ></i>
+              <i class="fas" [class.fa-star]="i < selectedCompetency.level" [class.fa-star-half-alt]="i === selectedCompetency.level - 0.5" [class.fa-star-o]="i >= selectedCompetency.level"></i>
             </ng-container>
           </div>
           <button class="btn btn-sm btn-secondary mt-2" (click)="closeModal()">
