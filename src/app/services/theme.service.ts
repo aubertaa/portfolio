@@ -5,25 +5,29 @@ import { Injectable } from '@angular/core';
 })
 export class ThemeService {
 
-    isLightTheme = false;
+  isLightTheme = false;
 
-    toggleTheme (): void {
-      this.isLightTheme = !this.isLightTheme;
-      document.body.classList.toggle('light-theme', this.isLightTheme);
+  constructor() {}
+  
 
-      const header = document.querySelector('header');
-      if (header) {
-        header.classList.toggle('light-theme', this.isLightTheme);
-      }
-      const footer = document.querySelector('footer');
-      if (footer) {
-        footer.classList.toggle('light-theme', this.isLightTheme);
-      }
+  toggleTheme (): void {
+    this.isLightTheme = !this.isLightTheme;
+    document.body.classList.toggle('light-theme', this.isLightTheme);
 
-      //change favicon
-      const favicon = document.querySelector('link[rel="icon"]');
-      if (favicon) {
-        favicon.setAttribute('href', this.isLightTheme ? 'favicon-light.ico' : 'favicon.ico');
+    const header = document.querySelector('header');
+    if (header) {
+      header.classList.toggle('light-theme', this.isLightTheme);
+    }
+
+    const footer = document.querySelector('footer');
+    if (footer) {
+      footer.classList.toggle('light-theme', this.isLightTheme);
+    }
+
+    // Change favicon
+    const favicon = document.querySelector('link[rel="icon"]');
+    if (favicon) {
+      favicon.setAttribute('href', this.isLightTheme ? 'favicon-light.ico' : 'favicon.ico');
     }
   }
 }

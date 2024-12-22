@@ -115,7 +115,7 @@
           </div>
         </div>
         <div class="popin-body">
-          <p class="text-muted">{{ selectedCompetency.description }}</p>
+          <p class="text-muted" [innerHTML]="selectedCompetency.description | newlineToBr"></p>
         </div>
         <div class="popin-footer">
           <div

@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './pages/home/home.component';
-import { AboutComponent } from './pages/about/about.component';
 import { CompetenciesComponent } from './pages/competencies/competencies.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -17,18 +16,20 @@ import { AchievementsComponent } from './pages/achievements/achievements.compone
 import { LibraryComponent } from './pages/library/library.component';
 import { FormsModule } from '@angular/forms';
 
+import { NewlineToBrPipe } from './pipes/newline-to-br.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
     CompetenciesComponent,
     ProjectsComponent,
     ContactComponent,
     HeaderComponent,
     FooterComponent,
     AchievementsComponent,
-    LibraryComponent
+    LibraryComponent,
+    NewlineToBrPipe
   ],
   imports: [
     BrowserModule,

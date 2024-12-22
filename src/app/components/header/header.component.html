@@ -1,7 +1,6 @@
-<header class="d-flex justify-content-between align-items-center p-3 shadow-sm">
+<header class="d-flex justify-content-between align-items-center p-3 shadow-sm" [ngClass]="themeService.isLightTheme ? 'light-theme' : ''">
   <nav class="d-flex">
     <a class="nav-link mx-2" routerLink="/"><i class="fas fa-home"></i></a>
-    <a class="nav-link mx-2" routerLink="/qui-suis-je">Qui suis-je ?</a>
     <a class="nav-link mx-2" routerLink="/mes-competences">Compétences</a>
     <a class="nav-link mx-2" routerLink="/projets">Projets</a>
     <a class="nav-link mx-2" routerLink="/achievements">Accomplissements</a>

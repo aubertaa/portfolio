@@ -1,0 +1,73 @@
+/* General Card Styling */
+.card {
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-top: none;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.card-text {
+  color: #555;
+  text-align: justify;
+}
+
+.badge-container {
+  margin-top: 10px;
+}
+
+/* Specific card type backgrounds and styles */
+.card-conference {
+  border: 5px solid #3498db;
+  color: #3498db;
+}
+
+.card-publication {
+  border: 5px solid #e67e22;
+  color: #e67e22;
+}
+
+.card-enseignement {
+  border: 5px solid #8e44ad;
+  color: #8e44ad;
+}
+
+/* Badge Styles */
+.badge {
+  font-weight: bold;
+}
+
+/* Footer Buttons Styling */
+.card-footer a {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.card-footer a:hover {
+  text-decoration: underline;
+}
+
+.achievement-image {
+  max-width:100px;
+  height: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 25px;
+}

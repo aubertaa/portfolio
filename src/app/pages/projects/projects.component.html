@@ -14,7 +14,7 @@
             <h2 class="timeline-title">{{ project.title }}</h2>
           </div>
             <img class="timeline-image" alt="{{ project.title }} image" *ngIf="project.image" [src]="project.image">
-            <p class="timeline-description" *ngIf="project.description">{{ project.description }}</p>
+            <p class="timeline-description" *ngIf="project.description" [innerHTML]="project.description | newlineToBr"></p>
             <div class="timeline-documents " *ngIf="project.documents.length">
               <a class="alert alert-warning timeline-document-link alert-link" *ngFor="let document of project.documents" [href]="document.url" target="_blank">Voir {{ document.title }}</a>
             </div>

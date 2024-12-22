@@ -1,1 +1,67 @@
-<p>achievements works!</p>
+<div class="layout">
+  <app-header></app-header>
+  <div class="content">
+    <div class="container mt-4">
+      <div *ngFor="let type of types">
+        <section
+          class="category-section mb-5"
+          *ngIf="getAchievements(type).length > 0"
+        >
+          <div class="text-center mb-4">
+            <h3 class="category-title text-center">{{ type }}</h3>
+          </div>
+          <div class="row">
+            <div
+              class="col-md-6 mb-4"
+              *ngFor="let achievement of getAchievements(type)"
+            >
+              <div
+                class="card h-100 shadow-lg"
+                [ngClass]="{
+                  'card-conference': achievement.type === 'Conférence',
+                  'card-publication': achievement.type === 'Publication',
+                  'card-enseignement': achievement.type === 'Enseignement'
+                }"
+              >
+                <div class="card-body text-left">
+                  <div class="card-title d-flex align-items-center">
+                    <img
+                      class="achievement-image  me-3"
+                      alt="{{ achievement.title }} image"
+                      [src]="
+                        achievement.type === 'Conférence'
+                          ? 'assets/achievements/tv-screen.png'
+                          : achievement.type === 'Publication'
+                          ? 'assets/achievements/book.png'
+                          : 'assets/achievements/school.png'
+                      "
+                    />
+                    <div>
+                    <h4>{{ achievement.title }}</h4>
+                    <h5 class="text-muted">
+                      {{ achievement.date }} | {{ achievement.place }}
+                    </h5></div>
+                  </div>
+
+                  <p class="card-text mt-3" [innerHTML]="achievement.description | newlineToBr">
+                  </p>
+                </div>
+                <div class="card-footer text-center">
+                  <a
+                    class="btn btn-link"
+                    *ngFor="let link of achievement.links"
+                    [href]="link.url"
+                    target="_blank"
+                  >
+                    {{ (link.url.includes("http") ? "Voir " : "Télécharger ")  + link.title }}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+  <app-footer></app-footer>
+</div>

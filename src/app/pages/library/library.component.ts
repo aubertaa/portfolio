@@ -1,5 +1,6 @@
 import { Component, HostListener } from '@angular/core';
 import { LibraryService } from '../../services/library.service';
+import { PreloadImagesService } from '../../services/preload-images.service';
 
 export interface Book {
   title: string;
@@ -24,7 +25,9 @@ export class LibraryComponent {
   selectedBook: any = null;
   showDetails: boolean = false;
 
-  constructor(private libraryService: LibraryService) {}
+  constructor(private libraryService: LibraryService,
+              private preloadImagesService: PreloadImagesService
+  ) {}
 
   getBooks (category: string) {
     return this.books.filter(book => book.category === category);
@@ -40,6 +43,10 @@ export class LibraryComponent {
     this.books = this.libraryService.getBooks();
     this.categories = this.books.map(book => book.category)
       .filter((category, index, categories) => categories.indexOf(category) === index);
+
+    //Preload images for the upcoming page
+    const imagesToPreload = this.books.map(book => book.image);
+    this.preloadImagesService.preloadImages(imagesToPreload);
   }
 
   closeModal() {

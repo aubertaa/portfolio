@@ -1,6 +1,6 @@
 import { Component, HostListener, OnInit } from '@angular/core';
 import { CompetenciesService } from '../../services/competencies.service';
-
+import { PreloadImagesService } from '../../services/preload-images.service';
 
 
 
@@ -25,13 +25,21 @@ export class CompetenciesComponent implements OnInit {
   categories: string[] = [];
   showCertifiedOnly: boolean = false;  // Toggle state for filtering
 
-  constructor(private competenciesService: CompetenciesService) { }
+  constructor(private competenciesService: CompetenciesService,
+              private preloadImagesService: PreloadImagesService
+  ) { }
 
   ngOnInit (): void {
+
     this.competencies = this.competenciesService.getCompetencies();
     this.filteredCompetencies = this.competencies;
     this.categories = this.competencies.map(competency => competency.category)
       .filter((category, index, categories) => categories.indexOf(category) === index);
+
+    // Preload images for the upcoming page
+    const logosToPreload = this.competencies.map(competency => competency.logo);
+    this.preloadImagesService.preloadImages(logosToPreload);
+
   }
 
   selectedCompetency: any = null;
