@@ -1,6 +1,6 @@
-<header class="d-flex justify-content-between align-items-center p-3 shadow-sm" [ngClass]="themeService.isLightTheme ? 'light-theme' : ''">
+<header class="d-flex justify-content-between align-items-center p-1 shadow-sm" [ngClass]="themeService.isLightTheme ? 'light-theme' : ''">
   <nav class="d-flex">
-    <a class="nav-link mx-2" routerLink="/"><i class="fas fa-home"></i></a>
+    <a class="nav-link mx-2" routerLink="/"><i class="fas fa-home" title="Retour à l'accueil"></i></a>
     <a class="nav-link mx-2" routerLink="/mes-competences">Compétences</a>
     <a class="nav-link mx-2" routerLink="/projets">Projets</a>
     <a class="nav-link mx-2" routerLink="/achievements">Accomplissements</a>
@@ -9,5 +9,5 @@
   </nav>
   <button class="btn btn-outline-secondary" (click)="toggleTheme()">
     
-    <i class="fas" [ngClass]="themeService.isLightTheme ? 'fa-sun' : 'fa-moon'"></i></button>
+    <i class="fas" [ngClass]="themeService.isLightTheme ? 'fa-sun' : 'fa-moon'" title="Light / dark theme switcher"></i></button>
 </header>
