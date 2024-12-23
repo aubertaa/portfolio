@@ -57,7 +57,6 @@
 /* Footer Buttons Styling */
 .card-footer a {
   text-decoration: none;
-  color: #007bff;
 }
 
 .card-footer a:hover {
@@ -70,4 +69,13 @@
   margin-top: 20px;
   margin-bottom: 10px;
   border-radius: 25px;
+}
+
+
+.card-footer .alert {
+  display: inline-block; /* Ensure the links stay inline */
+  margin: 0.25rem; /* Add spacing between links */
+  max-width: 100%; /* Prevent them from stretching too far */
+  text-align: center; /* Center-align text */
+  padding: 5px;
 }
