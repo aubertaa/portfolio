@@ -2,6 +2,9 @@
   <app-header></app-header>
 
   <div class="timeline-container">
+              <div class="text-center mb-4">
+            <h3 class="text-center">Timeline de mes principaux projets</h3>
+          </div>
     <div class="timeline">
       <div class="timeline-item" *ngFor="let project of getProjects(); let i = index">
         <div class="timeline-content" [ngClass]="{'left': i % 2 === 0, 'right': i % 2 !== 0}">
