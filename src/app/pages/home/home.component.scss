@@ -4,6 +4,9 @@
     flex-direction: column;
     /* Stack elements vertically */
     justify-content: flex-start;
+    /* Full width for smaller screens */
+    min-height: 200px;
+    /* Adjust minimum height for smaller screens */
     margin: 15px;
     padding: 20px;
     border: 1px solid #ccc;
@@ -69,21 +72,7 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 20px;
+    justify-content: center;
     /* Cards wrap to the next line on smaller screens */
     gap: 20px;
-}
-
-/* Responsive adjustments for smaller screens */
-@media (max-width: 768px) {
-    .link-card {
-        width: 100%;
-        /* Full width for smaller screens */
-        min-height: 200px;
-        /* Adjust minimum height for smaller screens */
-    }
-
-    .quick-links {
-        justify-content: center;
-        /* Center the cards on smaller screens */
-    }
 }
