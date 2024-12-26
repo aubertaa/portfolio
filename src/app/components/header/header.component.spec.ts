@@ -46,7 +46,7 @@ describe('HeaderComponent', () => {
     });
 
     it('should call toggleTheme() method when theme toggle button is clicked', () => {
-        const toggleButton = fixture.debugElement.query(By.css('button'));
+        const toggleButton = fixture.debugElement.query(By.css('#theme-toggle'));
         toggleButton.triggerEventHandler('click', null); // Simulate the click event
 
         expect(themeServiceMock.toggleTheme).toHaveBeenCalled();

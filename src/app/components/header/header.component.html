@@ -19,7 +19,7 @@
       <i class="fas fa-font fa-lg" [ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'" title="Large Font Size"></i>
     </button>
     <span class="mx-3">|</span>
-    <button class="btn btn-outline-secondary" (click)="toggleTheme()">
+    <button id="theme-toggle" class="btn btn-outline-secondary" (click)="toggleTheme()">
       <i class="fas" [ngClass]="themeService.isLightTheme ? 'fa-sun text-dark' : 'fa-moon text-light'" title="Light / dark theme switcher"></i>
     </button>
   </div>

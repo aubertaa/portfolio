@@ -91,7 +91,7 @@ describe('AchievementsComponent', () => {
   });
 
   it('should display the correct links for each achievement', () => {
-    const linkElements = fixture.debugElement.queryAll(By.css('.card-footer .btn-link'));
+    const linkElements = fixture.debugElement.queryAll(By.css('.card-footer .alert'));
     expect(linkElements.length).toBe(2); // Two links, one for each achievement
     expect(linkElements[0].nativeElement.href).toContain('http://example.com');
     expect(linkElements[1].nativeElement.href).toContain('http://example.com');
