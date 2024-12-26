@@ -49,7 +49,7 @@ export class AchievementsService {
         type: 'Conférence',
         links: [{
           title: 'le support de présentation',
-          url: 'https://www.linkedin.com/posts/alexandreaubertqa_lint%C3%A9gration-continue-d%C3%A9finition-principes-activity-6646419446887923713-D06u'
+          url: 'assets/documents/intégration_continue_WCS.pptx'
       }],
         description: "Présentation du concept et des pratiques de l'intégration continue à des élèves développeurs."
       },
@@ -60,7 +60,7 @@ export class AchievementsService {
         type: 'Conférence',
         links: [{
           title: 'le support de présentation',
-          url: 'https://www.linkedin.com/posts/alexandreaubertqa_la-dette-technique-activity-6598236189550088192-Kqtw'
+          url: 'assets/documents/dette_technique_WCS.pptx'
       }],
         description: "Présentation du concept de dette technique, qu'est-ce que c'est ? Comment la mesurer ? Comment la gérer ? Comment la rembourser ?"
       },
@@ -71,7 +71,7 @@ export class AchievementsService {
         type: 'Conférence',
         links: [{
           title: 'le support de présentation',
-          url: 'https://www.linkedin.com/posts/alexandreaubertqa_lint%C3%A9gration-discontinue-atbdx-2019-activity-6597054912641806336-VCO7'
+          url: 'assets/documents/AgileTour2019_Integration_Discontinue_ A.AUBERT.pptx'
       }],
         description: "Présentation des principes et bonnes pratiques de l'intégration continue (code sources, livrables, environnements).\n\nQue doit-on/peut-on automatiser ? Que faire quand certaines actions restent manuelles ? Comment outiller l'intégration discontinue ?"
       },
