@@ -41,7 +41,6 @@ jobs:
           SFTP_REMOTE_PATH: ${{ secrets.SFTP_REMOTE_PATH }}
         run: |
           sshpass -p "$SFTP_PASSWORD" sftp -o StrictHostKeyChecking=no "$SFTP_USERNAME@$SFTP_HOST" <<EOF
-          mkdir -p $SFTP_REMOTE_PATH
-          put -r ./dist/* $SFTP_REMOTE_PATH/
+          put -r ./dist/portfolio/browser/* $SFTP_REMOTE_PATH/
           bye
           EOF
