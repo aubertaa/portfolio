@@ -9,7 +9,7 @@ export class AchievementsService {
 
     return [
       {
-        title: 'Quels indicateurs suivre quand on n\'a "plus assez" du bugs en production ?',
+        title: 'Quels indicateurs suivre quand on n\'a "plus assez" de bugs en production ?',
         place: 'Soirée du Test Logiciel - Bordeaux',
         date: '2024',
         type: 'Conférence',
