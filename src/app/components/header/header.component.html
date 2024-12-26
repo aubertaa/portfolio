@@ -9,13 +9,13 @@
     <a class="nav-link mx-2" routerLink="/contact">Contact</a>
   </nav>
   <div class="font-size-controls">
-    <button (click)="changeFontSize('small')" aria-label="Small Font Size">
-      <i class="fas fa-font fa-xs"[ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'" title="Small Font Size"></i>
+    <button class="btn btn-outline-secondary" (click)="changeFontSize('small')" aria-label="Small Font Size">
+      <i class="fas fa-font fa-xs me-2"[ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'" title="Small Font Size"></i>
     </button>
-    <button (click)="changeFontSize('medium')" aria-label="Medium Font Size">
-      <i class="fas fa-font fa-sm"[ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'" title="Medium Font Size"></i>
+    <button class="btn btn-outline-secondary" (click)="changeFontSize('medium')" aria-label="Medium Font Size">
+      <i class="fas fa-font fa-sm me-2"[ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'" title="Medium Font Size"></i>
     </button>
-    <button (click)="changeFontSize('large')" aria-label="Large Font Size">
+    <button class="btn btn-outline-secondary" (click)="changeFontSize('large')" aria-label="Large Font Size">
       <i class="fas fa-font fa-lg" [ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'" title="Large Font Size"></i>
     </button>
     <span class="mx-3">|</span>
