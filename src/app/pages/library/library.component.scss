@@ -35,8 +35,13 @@
     padding: 20px;
     border-radius: 10px;
     max-width: 500px;
+    max-height: 80%;
     width: 90%;
     text-align: left;
+}
+
+.modal-body {
+   overflow-y: auto; /* Enable vertical scroll if content overflows */
 }
 
 .modal-header, .modal-header img {

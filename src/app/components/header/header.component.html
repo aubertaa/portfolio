@@ -1,4 +1,5 @@
-<header class="d-flex justify-content-between align-items-center p-1 shadow-sm" [ngClass]="themeService.isLightTheme ? 'light-theme' : ''">
+<header class="d-flex justify-content-between align-items-center p-1 shadow-sm"
+        [ngClass]="themeService.isLightTheme ? 'light-theme' : ''">
   <nav class="d-flex">
     <a class="nav-link mx-2" routerLink="/"><i class="fas fa-home" title="Retour à l'accueil"></i></a>
     <a class="nav-link mx-2" routerLink="/mes-competences">Compétences</a>
@@ -7,7 +8,19 @@
     <a class="nav-link mx-2" routerLink="/library">Bibliothèque</a>
     <a class="nav-link mx-2" routerLink="/contact">Contact</a>
   </nav>
-  <button class="btn btn-outline-secondary" (click)="toggleTheme()">
-    
-    <i class="fas" [ngClass]="themeService.isLightTheme ? 'fa-sun' : 'fa-moon'" title="Light / dark theme switcher"></i></button>
+  <div class="font-size-controls">
+    <button (click)="changeFontSize('small')" aria-label="Small Font Size">
+      <i class="fas fa-font fa-xs"[ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'" title="Small Font Size"></i>
+    </button>
+    <button (click)="changeFontSize('medium')" aria-label="Medium Font Size">
+      <i class="fas fa-font fa-sm"[ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'" title="Medium Font Size"></i>
+    </button>
+    <button (click)="changeFontSize('large')" aria-label="Large Font Size">
+      <i class="fas fa-font fa-lg" [ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'" title="Large Font Size"></i>
+    </button>
+    <span class="mx-3">|</span>
+    <button class="btn btn-outline-secondary" (click)="toggleTheme()">
+      <i class="fas" [ngClass]="themeService.isLightTheme ? 'fa-sun text-dark' : 'fa-moon text-light'" title="Light / dark theme switcher"></i>
+    </button>
+  </div>
 </header>
