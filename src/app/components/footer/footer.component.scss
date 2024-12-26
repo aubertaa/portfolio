@@ -12,6 +12,10 @@
   color: #fff; /* Default text color */
 }
 
+.footer-left {
+    display: flex;
+    align-items: center; /* Optional: Align items vertically centered */
+}
 
 .footer a {
   color: #fff; /* Default text color */
@@ -41,4 +45,8 @@ footer.light-theme {
 
 footer.light-theme a {
   color: #343a40;
+}
+
+#ecoindex-badge {
+  margin-left: 15px;
 }

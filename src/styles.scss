@@ -26,7 +26,6 @@ body.light-theme {
   display: flex;
   flex-direction: column;
   min-height: 100vh; /* Ensure full height for content */
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -42,31 +41,8 @@ body.light-theme {
 
 /* Profile Picture */
 .profile-pic {
-  width: 225px;
   border-radius: 30%;
   margin-bottom: 20px;
-}
-
-/* Quick Links Section */
-.quick-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.link-card {
-  margin: 10px;
-  padding: 20px;
-  width: 200px;
-  text-align: center;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.link-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Navigation Links */
