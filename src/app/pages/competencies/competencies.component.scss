@@ -142,6 +142,8 @@
 
 .popin-body {
   margin-top: 20px;
+  max-height: calc(100vh - 200px); /* Adjust this based on the header and footer height */
+  overflow-y: auto; /* Enable vertical scroll if content overflows */
 }
 
 .popin-footer {
