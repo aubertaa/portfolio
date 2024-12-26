@@ -1,3 +1,43 @@
+/* Media query for small screens */
+@media (max-width: 900px) {
+  nav {
+    display: none;
+  }
+
+  nav.menu-collapsed {
+    display: none; /* Ensure the menu is hidden when collapsed */
+  }
+  
+  nav:not(.menu-collapsed) {
+    display: flex; /* Hide navigation menu on small screens */
+    flex-direction: column;
+    background-color: #333;
+    position: fixed;
+    top: 60px; /* Adjust based on header height */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+
+  .burger-menu {
+    display: block !important; /* Force visibility of the burger menu */
+  }
+
+}
+
+/* For larger screens, show the menu normally */
+@media (min-width: 900px) {
+  nav {
+    display: flex;
+  }
+
+  .burger-menu {
+    display: none; /* Hide burger menu icon */
+  }
+}
+
 header {
   background-color: #333;
   color: white;
@@ -5,6 +45,7 @@ header {
   transition: background-color 0.3s, color 0.3s;
   max-width: 100%;
   overflow: auto;
+  height:60px;
 }
 
 header.light-theme {

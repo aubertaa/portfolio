@@ -9,12 +9,18 @@ import { FontSizeService } from '../../services/font-size.service';
 })
 export class HeaderComponent {
 
+isMenuCollapsed = true; // Tracks the state of the menu (collapsed or expanded)
+
 constructor(public themeService: ThemeService,
             private fontSizeService: FontSizeService
             ) {}
 
   toggleTheme (): void {
     this.themeService.toggleTheme();
+  }
+
+  toggleMenu (): void {
+    this.isMenuCollapsed = !this.isMenuCollapsed; // Toggle the menu state
   }
 
   changeFontSize(size: 'small' | 'medium' | 'large'): void {

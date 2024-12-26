@@ -1,26 +1,33 @@
-<header class="d-flex justify-content-between align-items-center p-1 shadow-sm"
-        [ngClass]="themeService.isLightTheme ? 'light-theme' : ''">
-  <nav class="d-flex">
-    <a class="nav-link mx-2" routerLink="/"><i class="fas fa-home" title="Retour à l'accueil"></i></a>
-    <a class="nav-link mx-2" routerLink="/mes-competences">Compétences</a>
-    <a class="nav-link mx-2" routerLink="/projets">Projets</a>
-    <a class="nav-link mx-2" routerLink="/achievements">Accomplissements</a>
-    <a class="nav-link mx-2" routerLink="/library">Bibliothèque</a>
-    <a class="nav-link mx-2" routerLink="/contact">Contact</a>
+<header class="d-flex justify-content-between align-items-center p-1 shadow-sm" [ngClass]="themeService.isLightTheme ? 'light-theme' : ''">
+  <!-- Burger Menu Icon (visible on small screens) -->
+  <button class="burger-menu btn btn-outline-secondary d-md-none" (click)="toggleMenu()">
+    <i class="fas fa-bars" aria-label="Toggle Navigation Menu"></i>
+  </button>
+
+  <!-- Navigation Menu -->
+  <nav class="flex-column flex-md-row" [ngClass]="{'menu-collapsed': isMenuCollapsed}">
+    <a class="nav-link mx-md-2" routerLink="/"><i class="fas fa-home" title="Retour à l'accueil"></i></a>
+    <a class="nav-link mx-md-2" routerLink="/mes-competences">Compétences</a>
+    <a class="nav-link mx-md-2" routerLink="/projets">Projets</a>
+    <a class="nav-link mx-md-2" routerLink="/achievements">Accomplissements</a>
+    <a class="nav-link mx-md-2" routerLink="/library">Bibliothèque</a>
+    <a class="nav-link mx-md-2" routerLink="/contact">Contact</a>
   </nav>
+
+  <!-- Font Size Controls -->
   <div class="font-size-controls">
-    <button class="btn btn-outline-secondary" (click)="changeFontSize('small')" aria-label="Small Font Size">
-      <i class="fas fa-font fa-xs me-2"[ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'" title="Small Font Size"></i>
+    <button class="btn btn-outline-secondary" aria-label="Small Font Size" (click)="changeFontSize('small')">
+      <i class="fas fa-font fa-xs me-2" title="Small Font Size" [ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'"></i>
     </button>
-    <button class="btn btn-outline-secondary" (click)="changeFontSize('medium')" aria-label="Medium Font Size">
-      <i class="fas fa-font fa-sm me-2"[ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'" title="Medium Font Size"></i>
+    <button class="btn btn-outline-secondary" aria-label="Medium Font Size" (click)="changeFontSize('medium')">
+      <i class="fas fa-font fa-sm me-2" title="Medium Font Size" [ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'"></i>
     </button>
-    <button class="btn btn-outline-secondary" (click)="changeFontSize('large')" aria-label="Large Font Size">
-      <i class="fas fa-font fa-lg" [ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'" title="Large Font Size"></i>
+    <button class="btn btn-outline-secondary" aria-label="Large Font Size" (click)="changeFontSize('large')">
+      <i class="fas fa-font fa-lg" title="Large Font Size" [ngClass]="themeService.isLightTheme ? 'text-dark' : 'text-light'"></i>
     </button>
     <span class="mx-3">|</span>
-    <button id="theme-toggle" class="btn btn-outline-secondary" (click)="toggleTheme()">
-      <i class="fas" [ngClass]="themeService.isLightTheme ? 'fa-sun text-dark' : 'fa-moon text-light'" title="Light / dark theme switcher"></i>
+    <button class="btn btn-outline-secondary" id="theme-toggle" (click)="toggleTheme()">
+      <i class="fas" title="Light / dark theme switcher" [ngClass]="themeService.isLightTheme ? 'fa-sun text-dark' : 'fa-moon text-light'"></i>
     </button>
   </div>
 </header>
