@@ -4,7 +4,7 @@
 }
 
 .timeline-body {
-    text-align: center;
+  text-align: center;
 }
 
 .timeline {
@@ -25,29 +25,67 @@
   background: #ccc;
 }
 
-.timeline-item {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  margin: 20px 0;
-  word-wrap: break-word;
+/* Media query for small screens */
+@media (max-width: 900px) {
+  .timeline-item {
+    display: flex;
+    justify-content: center;
+  }
+
+  .timeline-item .timeline-content {
+    width: 95%;
+  }
+  .timeline-item .timeline-content.left {
+    left: 0%;
+  }
+
+  .timeline-item .timeline-content.right {
+    right: 0%;
+  }
+
+  .timeline-content::after {
+    transform: translateY(0%);
+  }
+
+  .timeline-content.left::after {
+    right: 0px;
+  }
+
+  .timeline-content.right::after {
+    left: 0px;
+  }
 }
 
-.timeline-item .timeline-content {
-  width: 50%;
-  background: #fff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
+/* Media query for larger screens */
+@media (min-width: 900px) {
+  .timeline-item {
+    display: flex;
+    justify-content: flex-end;
+  }
 
-.timeline-item .timeline-content.left {
-  left: -49%;
-}
+  .timeline-item .timeline-content {
+    width: 50%;
+  }
 
-.timeline-item .timeline-content.right {
-  right: 2%;
+  .timeline-item .timeline-content.left {
+    left: -49%;
+  }
+
+  .timeline-item .timeline-content.right {
+    right: 2%;
+  }
+
+  .timeline-content::after {
+    transform: translateY(-50%);
+  }
+
+  .timeline-content.left::after {
+    right: -10px;
+  }
+
+  .timeline-content.right::after {
+    left: -10px;
+  }
 }
 
 .timeline-content::after {
@@ -56,25 +94,36 @@
   width: 0;
   height: 0;
   top: 15px;
-  transform: translateY(-50%);
 }
 
 .timeline-content.left::after {
-  right: -10px;
   border-width: 10px;
   border-style: solid;
   border-color: transparent transparent transparent #fff;
 }
 
 .timeline-content.right::after {
-  left: -10px;
   border-width: 10px;
   border-style: solid;
   border-color: transparent #fff transparent transparent;
 }
 
+.timeline-item {
+  position: relative;
+  margin: 20px 0;
+  word-wrap: break-word;
+}
+
+.timeline-item .timeline-content {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
 .timeline-header {
-  text-align:center;
+  text-align: center;
 }
 
 .timeline-title {
@@ -124,7 +173,7 @@
 }
 
 .timeline-image {
-  max-width:100%;
+  max-width: 100%;
   height: auto;
   margin-top: 20px;
   margin-bottom: 20px;
