@@ -71,7 +71,14 @@
           </div>
         </div>
         <div class="popin-body">
-          <p class="text-muted" [innerHTML]="selectedCompetency.description | newlineToBr"></p>
+          <h3 class="title-intro">Introduction</h3>
+          <p class="text-muted" [innerHTML]="selectedCompetency.definition | newlineToBr"></p>
+          
+          <h3 class="title-facts">Mon expérience vécue</h3>
+          <p class="text-muted" [innerHTML]="selectedCompetency.facts | newlineToBr"></p>
+                  
+          <h3 class="title-evaluation">Mon niveau de compétence</h3>
+          <p class="text-muted" [innerHTML]="selectedCompetency.evaluation | newlineToBr"></p>
         </div>
         <div class="popin-footer">
           <div class="bg-transparent border-0 text-center" *ngIf="selectedCompetency.certification != ''">
