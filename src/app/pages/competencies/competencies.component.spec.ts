@@ -20,7 +20,9 @@ describe('CompetenciesComponent', () => {
             category: 'Category 1',
             logo: 'assets/logo1.png',
             level: 4,
-            description: 'Description 1\nNew line here',
+            definition: 'Description 1\nNew line here',
+            facts: 'This are facts1',
+            evaluation: 'This is evaluation1',
             certification: 'Certified 1',
         },
         {
@@ -28,7 +30,9 @@ describe('CompetenciesComponent', () => {
             category: 'Category 1',
             logo: 'assets/logo2.png',
             level: 2,
-            description: 'Description 2\nAnother new line',
+            definition: 'Description 2\nNew line here',
+            facts: 'This are facts2',
+            evaluation: 'This is evaluation2',
             certification: '',
         },
         {
@@ -36,7 +40,9 @@ describe('CompetenciesComponent', () => {
             category: 'Category 2',
             logo: 'assets/logo3.png',
             level: 5,
-            description: 'Description 3\nYet another new line',
+            definition: 'Description 3\nNew line here',
+            facts: 'This are facts3',
+            evaluation: 'This is evaluation3',
             certification: 'Certified 2',
         },
     ];
