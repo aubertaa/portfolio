@@ -14,7 +14,7 @@ export class CompetenciesService {
         level: 5,
         description: 'Je définis, implémente et maintiens des pipelines de build/livraison/promotion/déploiement au sein de l\'entreprise.\n\nJ\'assure la formation et l\'accompagnement des équipes dans leur usage des mécaniques de CI et dans leurs pratiques pouvant aller jusqu\'au déploiement continu.\n\nIl est pour moi important de garantir la qualité des livraisons et de réduire les risques de régression.\n\nCet outillage est une des clés pour livrer vite et bien des incréments logiciels, en toute confiance et en toute sécurité.',
         definition: "L'intégration continue (CI) est constituée d'un ensemble de pratiques utilisées en développement logiciel consistant à vérifier à chaque modification de code source que le résultat des modifications ne produit pas de régression dans l'application développée. Parmi ces pratiques, on trouve principalement l'automatisation des builds et des tests.\n\nIl est important, pour garantir la qualité des livraisons et une bonne maîtrise du cycle de développement, d'identifier correctement les livrables par une politique de versionning adaptée. Une bonne gestion des livrables et des configurations sont également essentielles.\n\nLa livraison continue (CD) est une extension de la CI qui permet de déployer automatiquement les livrables en production, après validation des tests et des contrôles qualité. Cette pratique n'est possible que lorsque les livraisons sont fiables et de qualité, ce qui nécessite une CI bien définie, bien mise en place et bien utilisée.\n\nCet outillage est une des clés pour livrer vite et bien des incréments logiciels, en toute confiance et en toute sécurité.",
-        facts: "Depuis de nombreuses années, je mets en place des pipelines de CI/CD dans les entreprises où je travaille, pour garantir la qualité des livraisons et la réduction des risques de régression.\n\nJ'ai commencé en 2009, chez Steek, avec la mise en place de tests de non régression automatisée d'une API comportant de nombreux endpoints et combinaisons de paramètres/options. J'ai fait mes premiers pas sous Jenkins à la même époque, avec mes premiers pipelines de builds automatisés.\n\nDe 2009 à 2012, chez F-Secure, j'ai répondu à des besoins grandissants d'automatisation et d'intégration sur des projets d'envergure internationale : automatisation des déploiements, de la mise à disposition d'environnements de test et des exécutions de tests d'intégration inter-équipes, pour des équipes situées dans différents pays (France, Finlande, Malaisie).\n\nEn 2013, chez Addinsoft, j'ai mis en place un gestionnaire de code source (SVN), un serveur d'intégration continue (Jenkins) et formé les équipes de développement à leur utilisation. J'ai défini un processus de validation continue des logiciels, ce qui a permis de fiabiliser les livraisons tout en accélérant leur rythme.\n\nDepuis 2015, je suis responsable, référent et formateur sur les questions afférentes à l'intégration et au déploiement continu. J'ai formé et accompagné les équipes de développement dans la mise en place de pipelines de CI/CD, et permis à chaque équipe de devenir autonome sur ces sujets.\n\nJ'enseigne aujourd'hui aussi ces pratiques en école.",
+        facts: "Depuis de nombreuses années, je mets en place des pipelines de CI/CD dans les entreprises où je travaille, pour garantir la qualité des livraisons et la réduction des risques de régression.\n\nJ'ai commencé en 2009, chez Steek, avec la mise en place de tests de non régression automatisée d'une API comportant de nombreux endpoints et combinaisons de paramètres/options. J'ai fait mes premiers pas sous Jenkins à la même époque, avec mes premiers pipelines de builds automatisés.\n\nDe 2009 à 2012, chez F-Secure, j'ai répondu à des besoins grandissants d'automatisation et d'intégration sur des projets d'envergure internationale : automatisation des déploiements, de la mise à disposition d'environnements de test et des exécutions de tests d'intégration inter-équipes, pour des équipes situées dans différents pays (France, Finlande, Malaisie).\n\nEn 2013, chez Addinsoft, j'ai mis en place un gestionnaire de code source (SVN), un serveur d'intégration continue (Jenkins) et formé les équipes de développement à leur utilisation. J'ai défini un processus de validation continue des logiciels, ce qui a permis de fiabiliser les livraisons tout en accélérant leur rythme.\n\nDepuis 2015, je suis responsable, référent et formateur sur les questions afférentes à l'intégration et au déploiement continu. J'ai formé et accompagné les équipes de développement dans la mise en place de pipelines de CI/CD, et permis à chaque équipe de devenir autonome sur ces sujets.\n\nJ'enseigne aujourd'hui aussi ces pratiques en école (Bac +2 / Bac +3).",
         evaluation: "J'ai pu démontrer mes compétences dans ce domaine lors de mes différentes missions en entreprise, ce qui m'a permis de gagner la confiance de mes collègues et de mes supérieurs. Reconnu comme un expert sur le domaine et les pratiques CI/CD, je suis l'interlocuteur privilégié dans mon entreprise à ce sujet. Conscient que l'évolution et les améliorations doivent être constantes, pour répondre à des problématiques sans cesse changeantes, je suis toujours prêt à étendre et renouveler mes compétences en ce domaine. Je pense qu'il est important de ne pas se reposer sur ses acquis qui peuvent très vite devenir obsolètes.",
         certification: ""
       },
@@ -23,9 +23,9 @@ export class CompetenciesService {
         category: 'Ingénierie Logicielle',
         logo: 'logos/devops.png',
         level: 5,
-        description: 'Je défends et diffuse la culture de l\'automatisation, de la collaboration entre \'Devs\' et \'Ops\', par les pratiques d\'observabilité, le monitoring métier ou encore les pratiques S.R.E.(Site Reliability Engineering).\n\nIl est important d\'automatiser au maximum, monitorer tout ce qu\'on fait pour appuyer nos décisions et nos évolutions.\n\nSavoir où sont les points d\'amélioration et faire des petites évolutions successives permet de garantir la stabilité et la performance de nos services, tout en progressant continuellement : c\'est ça l\'esprit DevOps ! J\'enseigne aussi cette culture en école.',
+        description: 'Je défends et diffuse la culture de l\'automatisation, de la collaboration entre \'Devs\' et \'Ops\', par les pratiques d\'observabilité, le monitoring métier ou encore les pratiques S.R.E.(Site Reliability Engineering).\n\nIl est important d\'automatiser au maximum, monitorer tout ce qu\'on fait pour appuyer nos décisions et nos évolutions.\n\nSavoir où sont les points d\'amélioration et faire des petites évolutions successives permet de garantir la stabilité et la performance de nos services, tout en progressant continuellement : c\'est ça l\'esprit DevOps ! J\'enseigne aussi cette culture en école (Bac +2 / Bac +3).',
         definition: "Le mot DevOps peut englober différentes choses, d'un état d'esprit à un ensemble de pratiques, en passant par des outils et des méthodes de travail. Pour moi, c'est avant tout une culture de l'automatisation, de la collaboration entre 'Devs' et 'Ops', par les pratiques d'observabilité, le monitoring métier ou encore les pratiques S.R.E.(Site Reliability Engineering).\n\nIl est important d'automatiser au maximum, monitorer tout ce qu'on fait pour appuyer nos décisions et nos évolutions.\n\nSavoir où sont les points d'amélioration et faire des petites évolutions successives permet de garantir la stabilité et la performance de nos services, tout en progressant continuellement : c'est ça l'esprit DevOps !",
-        facts: "J'ai découvert l'esprit DevOps en 2010, chez Steek, alors que j'étais membre actif (en tant que développeur de tests automatisés) d'une équipe de développement d'un backend logiciel. Nous subissions les critiques des équipes d'exploitation ('team hosting') qui étaient souvent confrontés à des problèmes de déploiement et de mise en production de nos livrables alors que nous pensions que nos livrables étaient vraiment de grande qualité et nos procédures de déploiement documentées correctement.\n\nJ'ai alors commencé à m'intéresser à ces problématiques, à chercher des solutions, à proposer de collaborer avec les équipes d'exploitation pour mieux comprendre leurs contraintes et leurs besoins. J'ai organisé une journée d'immersion pour notre équipe de dev, dans l'équipe 'hosting' : nous avons alors vraiment pris la mesure de leurs contraintes et du décalage entre leurs besoins réels et notre perception de ceux-ci. Ce fut le début d'une collaboration très productive mais aussi de liens humains importants, à l'inverse de l'opposition que nous ressentions tous jusqu'à lors.\n\nC'est depuis ce jour que j'applique au quotidien et que je diffuse autour de moi deux principes fondamentaux : 'Il est important de prendre connaissance des contraintes de l'autre avant de le juger' et 'Rien ne vaut une communication directe pour envisager d'avancer efficacement ensemble'.\n\n\n\nDepuis 2015, au delà de cet état d'esprit, je contribue activement au développement des deux grands axes des pratiques DevOps chez AT Internet : automatiser (les tests, les builds, les pipelines) et monitorer/observer (nos produits mais aussi notre cycle de développement).\n\n\n\nJ'enseigne aujourd'hui aussi cette culture et les pratiques associées en école.",
+        facts: "J'ai découvert l'esprit DevOps en 2010, chez Steek, alors que j'étais membre actif (en tant que développeur de tests automatisés) d'une équipe de développement d'un backend logiciel. Nous subissions les critiques des équipes d'exploitation ('team hosting') qui étaient souvent confrontés à des problèmes de déploiement et de mise en production de nos livrables alors que nous pensions que nos livrables étaient vraiment de grande qualité et nos procédures de déploiement documentées correctement.\n\nJ'ai alors commencé à m'intéresser à ces problématiques, à chercher des solutions, à proposer de collaborer avec les équipes d'exploitation pour mieux comprendre leurs contraintes et leurs besoins. J'ai organisé une journée d'immersion pour notre équipe de dev, dans l'équipe 'hosting' : nous avons alors vraiment pris la mesure de leurs contraintes et du décalage entre leurs besoins réels et notre perception de ceux-ci. Ce fut le début d'une collaboration très productive mais aussi de liens humains importants, à l'inverse de l'opposition que nous ressentions tous jusqu'à lors.\n\nC'est depuis ce jour que j'applique au quotidien et que je diffuse autour de moi deux principes fondamentaux : 'Il est important de prendre connaissance des contraintes de l'autre avant de le juger' et 'Rien ne vaut une communication directe pour envisager d'avancer efficacement ensemble'.\n\n\n\nDepuis 2015, au delà de cet état d'esprit, je contribue activement au développement des deux grands axes des pratiques DevOps chez AT Internet : automatiser (les tests, les builds, les pipelines) et monitorer/observer (nos produits mais aussi notre cycle de développement).\n\n\n\nJ'enseigne aujourd'hui aussi cette culture et les pratiques associées en école (Bac +2 / Bac +3).",
         evaluation: "Je me sens complètement imprégné de la culture DevOps, avec une bonne connaissance des outils et des pratiques qui y sont souvent associées comme la conteneurisation, l'intégration continue, la recherche d'efficacité.",
         certification: ""
       },
@@ -100,9 +100,9 @@ export class CompetenciesService {
         category: 'Ingénierie Logicielle',
         logo: 'logos/test_automation.png',
         level: 5,
-        description: 'Du respect de la stratégie de tests de l\'entreprise à l\'implémentation de campagnes de test, écriture et exécution de tests logiciels automatisés, choix d\'outils de test en fonction des contextes projets.\n\nLa priorisation, l\'évalutation des risques et la détection au plus tôt des régressions sont des points clés pour moi dans la mise en place de tests automatisés.\n\nJ\'ai pu démontrer mes compétences dans ce domaine lors de mes différentes missions en entreprise, ce qui m\'a permis de gagner la confiance de mes collègues et de mes supérieurs.\n\nJ\'enseigne aussi ces pratiques en école.',
+        description: 'Du respect de la stratégie de tests de l\'entreprise à l\'implémentation de campagnes de test, écriture et exécution de tests logiciels automatisés, choix d\'outils de test en fonction des contextes projets.\n\nLa priorisation, l\'évalutation des risques et la détection au plus tôt des régressions sont des points clés pour moi dans la mise en place de tests automatisés.\n\nJ\'ai pu démontrer mes compétences dans ce domaine lors de mes différentes missions en entreprise, ce qui m\'a permis de gagner la confiance de mes collègues et de mes supérieurs.\n\nJ\'enseigne aussi ces pratiques en école (Bac +2 / Bac +3).',
         definition: "Les pratiques de test logiciel sont vastes : du respect de la stratégie de tests de l'entreprise à l'implémentation de campagnes de test, l'écriture et l'exécution de tests logiciels automatisés en passant par le choix d'outils de test en fonction des contextes projets.\n\nLa priorisation, l'évaluation des risques et la détection au plus tôt des régressions sont des points clés pour moi dans la mise en place de tests automatisés.",
-        facts: "J'ai défini mes premiers plans de tests et implémenté mes premiers tests logiciels automatisés en 2008, chez Steek, avec la mise en place d'environ 90 000 assertions dans des cas de test d'API en deux ans. L'outil utilisé était 'maison' (Galathee), j'en assurais la roadmap en fonction de mes besoins fonctionnels.\n\nEn 2010, chez F-Secure, j'ai mis en place de nouveaux tests automatisés pour moi : des évaluations de performance et de charge avec JMeter et Neoload. Ces tests m'ont permis d'exprimer des recommandations de configurations optimales (RAM/CPU) et de scaling à l'équipe en charge des infrastructures pour répondre au mieux aux problématiques de charge et de performance du produit. \n\nEn 2013, chez Addinsoft, j'ai mis en place des tests automatisés de non régression sur les interfaces graphiques des logiciels de la suite XLSTAT, avec Selenium, Sikuli et des scripts VBA 'maison'. Ces tests m'ont permis de garantir la qualité des livraisons et de réduire efficacement le nombre de régressions.\n\nDepuis 2015, je suis responsable, référent et formateur sur les questions afférentes aux pratiques de test logiciel. J'ai formé et accompagné les équipes de développement dans la mise en place de tests automatisés.\n\nJ'ai également formé les développeurs de test de l'entreprise, qui ne disposaient pas de toutes les compétences requises, ce qui est très courant dans le domaine, faute de formation initiale disponible (le plus courant est de recruter des développeurs et de les former au test logiciel ou des testeurs 'manuels' qu'il faut former au développement).\n\nJ'enseigne aujourd'hui les pratiques de tests logiciels en école.",
+        facts: "J'ai défini mes premiers plans de tests et implémenté mes premiers tests logiciels automatisés en 2008, chez Steek, avec la mise en place d'environ 90 000 assertions dans des cas de test d'API en deux ans. L'outil utilisé était 'maison' (Galathee), j'en assurais la roadmap en fonction de mes besoins fonctionnels.\n\nEn 2010, chez F-Secure, j'ai mis en place de nouveaux tests automatisés pour moi : des évaluations de performance et de charge avec JMeter et Neoload. Ces tests m'ont permis d'exprimer des recommandations de configurations optimales (RAM/CPU) et de scaling à l'équipe en charge des infrastructures pour répondre au mieux aux problématiques de charge et de performance du produit. \n\nEn 2013, chez Addinsoft, j'ai mis en place des tests automatisés de non régression sur les interfaces graphiques des logiciels de la suite XLSTAT, avec Selenium, Sikuli et des scripts VBA 'maison'. Ces tests m'ont permis de garantir la qualité des livraisons et de réduire efficacement le nombre de régressions.\n\nDepuis 2015, je suis responsable, référent et formateur sur les questions afférentes aux pratiques de test logiciel. J'ai formé et accompagné les équipes de développement dans la mise en place de tests automatisés.\n\nJ'ai également formé les développeurs de test de l'entreprise, qui ne disposaient pas de toutes les compétences requises, ce qui est très courant dans le domaine, faute de formation initiale disponible (le plus courant est de recruter des développeurs et de les former au test logiciel ou des testeurs 'manuels' qu'il faut former au développement).\n\nJ'enseigne aujourd'hui les pratiques de tests logiciels en école (Bac +2 / Bac +3).",
         evaluation: "Certifié en 2015, j'ai pu démontrer mes compétences dans ce domaine lors de mes différentes missions en entreprise. Je pense être totalement opérationnel en ce domaine et je cherche à maintenir mes connaissances à jour, dans un domaine en évolution constante.",
         certification: 'ISTQB Fondation'
       },
@@ -321,9 +321,9 @@ export class CompetenciesService {
         logo: 'logos/cypress.png',
         level: 5,
         description: 'Je procède moi-même et j\'accompagne les équipes sur l\'implémentation de tests d\'interface automatisés avec Cypress : simulation de parcours utilisateur, non régression fonctionnelle.\n\nJe guide aussi sur les évolutions à venir, les bonnes pratiques et les pièges à éviter.',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "Cypress est un framework de test d'interface automatisé pour les applications web. Il permet de réaliser des tests de non-régression end-to-end, en simulant le comportement de l'utilisateur, en vérifiant le bon fonctionnement des fonctionnalités. L'outil s'est imposé ces dernières années comme une alternative sérieuse à l'historique Selenium. L'architecture simplifiée qu'il propose est bien plus simple à manipuler que les composants associés à Selenium (WebDriver, Selenium Server, etc...).",
+        facts: "J'ai développé mes premiers tests automatisés sous Cypress en 2016, chez AT Internet, dans le cadre de la mise en place de tests de non régression pour l'application web principale de l'entreprise à l'époque : Explorer. Depuis, j'ai formé 6 personnes à l'utilisation de l'outil.\n\nJ'interviens également en école (Bac +2 / Bac +3) pour former les étudiants à l'utilisation de Cypress pour les tests d'interface.",
+        evaluation: "Je pense avoir une certaine expertise de l'outil : je procède moi-même et j'accompagne les équipes sur l'implémentation de tests d'interface automatisés avec Cypress : simulation de parcours utilisateur, non régression fonctionnelle.\n\nJe guide aussi sur les évolutions à venir, les bonnes pratiques et les pièges à éviter.",
         certification: 'Advanced Cypress Professional'
       },
       {
@@ -332,8 +332,8 @@ export class CompetenciesService {
         logo: 'logos/datadog.png',
         level: 4,
         description: 'Je procède régulièrement à la création de dashboards qui exposent des métriques/logs envoyés depuis le code des équipes (et mon propre code).\n\nJe m\'occupe de la mise en place de monitors et alertes automatiques.',
-        definition: "",
-        facts: "",
+        definition: "Datadog est une plateforme de monitoring et qui permet d'assurer l'observabilité des applications. L'outil se base sur les logs, traces et métriques qui lui sont transmises pour assurer en temps réel la surveillance des applications et des services. Datadog permet de détecter les problèmes, de les analyser et d'alerter rapidement, pour garantir la disponibilité et le bon fonctionnement des applications.",
+        facts: "L'outil a été adopté en 2018 dans l'entreprise (AT Internet). J'ai alors été formé à son utilisation et j'ai rapidement pris en charge la création de dashboards spécifiques parmi lesquels : le suivi de l'activité métier des clients ou le suivi des exécutions de tests automatisés de non régression.\n\nJ'ai également codé en 2023, l'envoi de métriques personnalisées depuis les outils de la CI afin de pouvoir suivre les fréquences de déploiement et les métriques associées (DORA).\n\nJ'enseigne également un premier usage de l'outil et de ses fonctionnalités d'alerting (monitors) en école (Bac +2 / Bac +3).",
         evaluation: "",
         certification: ""
       },
@@ -341,22 +341,22 @@ export class CompetenciesService {
         title: 'Docker',
         category: 'Outils',
         logo: 'logos/docker.png',
-        level: 5,
-        description: 'Je pratique quotidiennement tous les aspects de la conteneurisation : création de conteneurs, réseaux, volumes, construction d\'images, publication, déploiement, docker-compose.\n\nJ\'enseigne aussi ces pratiques en école.',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        level: 4,
+        description: 'Je pratique quotidiennement tous les aspects de la conteneurisation : création de conteneurs, réseaux, volumes, construction d\'images, publication, déploiement, docker-compose.\n\nJ\'enseigne aussi ces pratiques en école (Bac +2 / Bac +3).',
+        definition: "Docker est un outil de conteneurisation qui permet de créer, de déployer et de gérer des conteneurs logiciels. Les conteneurs sont des environnements isolés qui contiennent une application et toutes ses dépendances, pour garantir la portabilité et la reproductibilité des environnements de développement, de test et de production. Docker permet de simplifier le déploiement des applications et permet la promotion de livrables jusqu'en production, dans de très bonnes conditions de reproductibilité et de sécurité.",
+        facts: "J'ai découvert docker en 2017 avec la création de mes premiers conteneurs pour un usage principalement local au départ. Les conteneurs me permettaient de facilement disposer d'outils différents commme python ou encore nodejs, dans des versions choisies, en assurant l'économie de l'installation de l'outil en lui même sur la machine hôte.\n\nEn 2020, j'ai créé ma première application totalement conteneurisée : le hit-maker. Cette application en python sert à la génération de données en temps réels à des fins de test pour les équipes de développement. Dans le cadre de ce même projet, j'ai également utilisé des conteneurs pour l'exécution des tests unitaires du projet.\n\nJe maintiens aujourd'hui différentes application internes qui sont exécutées sous le forme de conteneurs docker : sonarqube, gitlab, jenkins par exemple.\n\nEn 2024, j'ai également utilisé docker et docker-compose dans le cadre de projets scolaires comme Project Management Tool (PMT), ou encore Innotech votes.\n\nJ'enseigne également cet outil et les notions associées en école (Bac +2 / Bac +3).",
+        evaluation: "Je pense être considéré aujourd'hui comme un expert de l'utilisation de docker. J'en ai un usage quasi quotidien et professionnel, y compris dans le cadre d'applications critiques pour l'entreprise. L'étendue de mes connaissances et de mes compétences me permettent de répondre à des besoins très variés et complexes, en matière de conteneurisation mais je sais cependant que certaines spéficités de l'outil me sont encore inconnues.",
         certification: ""
       },
       {
         title: 'GitHub',
         category: 'Outils',
         logo: 'logos/github.png',
-        level: 5,
+        level: 4,
         description: 'Utilisation régulière, forks, pull requests, issues, actions.',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "Github est la plateforme de gestion de code source de Microsoft. C'est un standard utilisé par des millions de développeurs dans le monde pour collaborer sur des projets. L'outil héberge non seulement le code source mais propose aussi un ensemble de fonctionnalités comme la gestion des issues, les pull requests, les actions, les workflows, les pages statiques, etc... Github est un outil incontournable pour les développeurs et les équipes de développement.",
+        facts: "Je suis propriétaire de 20 repositories dans Github, dont 8 sont publics. J'utilise l'outil dans le cadre de mes projets personnels et scolaires uniquement.\n\nJ'ai, dans le cadre scolaire en 2024, implémenté des pipelines complets de Github Actions pour valider, builder, et livrer différents projets",
+        evaluation: "Je suis à l'aise dans l'utilisation de la plateforme Github. J'en ai une utilisation complète même si je n'ai pas eu l'occasion de l'utiliser dans un cadre professionnel. Je pourrais affiner mes connaissance par l'usage des github Pages et de github Actions plus variées.",
         certification: ""
       },
       {
@@ -365,10 +365,10 @@ export class CompetenciesService {
         logo: 'logos/gitlab.png',
         level: 5,
         description: 'Utilisation professionnelle quotidienne, accompagnement et formation des utilisateurs.',
-        definition: "",
-        facts: "",
-        evaluation: "",
-        certification: 'Gitlab Practitioner'
+        definition: "Gitlab est une plateforme de gestion de code source qui propose un ensemble de fonctionnalités pour les développeurs et les équipes de développement. L'outil permet de gérer le code source, de suivre les issues, de créer des merge requests, de définir des pipelines CI/CD, de gérer des secrets, de déployer des applications, etc... Gitlab s'est rapidement définie comme une 'plateforme DevOps' qui propose une intégration complète des outils et des processus de développement, contrairement à Github. Gitlab propose ainsi des fonctionnalités de gestion de projets plus fournies et plus intégrées que Github.",
+        facts: "J'utilise Gitlab dans un cadre professionnel depuis mon arrivée chez AT Internet, en 2015. Je suis aujourd'hui et depuis 2016, administrateur de l'outil et référent sur son usage pour les équipes de développement. J'assure la veille sur différents aspects comme le renouvellement et les expirations de tokens utilisateurs, les fermetures de compte en cas de départ d'employés de l'entreprise mais aussi le suivi des coûts de l'outil et la gestion des montées de version régulières.\n\nJe m'occupe également de l'intégration de l'outil avec les autres outils du cycle de développement de l'entreprise (Jenkins, JIRA, Sonarqube par exemple).",
+        evaluation: "Certifié GitLab Git Associate en 2021, j'ai une pratique complète et professionelle de l'usage de l'outil et de son administration. Je pense maîtriser complètement l'outil et être capable de répondre à des besoins très variés et complexes. Je suis également en mesure d'accompagner et de former les utilisateurs de l'outil.",
+        certification: 'GitLab Certified Git Associate'
       },
       {
         title: 'Jenkins',
@@ -376,9 +376,9 @@ export class CompetenciesService {
         logo: 'logos/jenkins.png',
         level: 5,
         description: 'Utilisation et administration, développement de scripts et pipelines complexes, gestion des secrets, parcs de runners dynamiques, formation et accompagnement des utilisateurs.\n\nJe suis référent dans l\'entreprise pour toutes les questions liées à Jenkins.',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "Jenkins est un outil d'intégration continue open source qui existe depuis très longtemps (2004). C'est un outil de référence dans les entreprises pour automatiser les tâches de build, de test et de déploiement des applications. Jenkins permet de créer des pipelines CI/CD, de gérer des secrets, de déclencher des jobs à la demande ou de manière planifiée, de surveiller des métriques, de déployer des applications, etc... Jenkins est un outil très puissant et très flexible, qui permet de répondre à des besoins très variés et complexes.",
+        facts: "J'ai fait mes premiers pas sous Jenkins chez Steek, en 2009 alors que l'outil s'appelait encore Hudson. On retrouve d'ailleurs ce nom dans un certain nombre de classes et dans les documentations de l'outil. J'ai alors mis en place mes premiers 'jobs jenkins' pour automatiser les builds et les runs de test dans l'équipe de développement dans laquelle je me trouvais.\n\nJ'ai étendu mes connaissances de l'outil chez F-Secure, de 2010 à 2012 et suis rapidement devenu référent sur son utilisation.\n\nEn 2016, j'ai formé les équipes chez AT Internet à son utilisation et j'ai accompagné les développeurs dans l'écriture des premiers 'scripted pipelines' en 2018, dans le cadre de l'atteinte des objectifs de mise en place de l'intégration continue de façon globale dans l'entreprise.\n\nJe suis aujourd'hui le plus expérimenté dans l'entreprise sur l'usage et l'administration de cet outil. Je contribue à la mise à disposition de scripts groovy, sous forme de 'Jenkins Shared libraries' pour faciliter l'écriture des pipelines par les équipes de développement.\n\nJ'ai produit une cinquataine de tutoriels à destination des développeurs pour assurer un bon usage et l'application de bonnes pratiques dans l'outil.\n\nJe forme également les étudiants en école (Bac +2 / Bac +3) à l'utilisation de Jenkins pour l'intégration continue.\n\nJe gère également activement les montées de version de l'outil et la gestion des plugins associés, ainsi que les secrets et le parc de runners dynamiques (sous AWS).",
+        evaluation: "Je suis reconnu comme un expert de l'outil Jenkins dans l'entreprise. J'ai une pratique complète, professionnel et je bénéficie d'une expérience de plus de 15 ans sur son usage, ce qui me permet d'apporter une aide efficace et pertinente aux équipes de développement.",
         certification: ""
       },
       {
@@ -387,9 +387,9 @@ export class CompetenciesService {
         logo: 'logos/jetbrains.png',
         level: 4,
         description: 'Utilisation régulière, refactoring, debug/tracing, tests.',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "La suite JetBrains est constituée d'un ensemble d'IDEs (Integrated Development Environment) qui couvrent un large spectre de langages de programmation et de technologies. Les IDEs de JetBrains sont reconnus pour leur qualité, leur ergonomie et leur richesse fonctionnelle. La suite comprend des outils comme IntelliJ IDEA, WebStorm, PyCharm et bien d'autres... Ces outils sont très utilisés par les développeurs dans mon entreprise.",
+        facts: "J'ai commencé à utiliser JetBrains Pycharm en 2011, dans le cadre du développement d'un backend en python chez F-Secure (nom de code 'Morpheus'). J'ai tout de suite apprécié l'outil et son ergonomie.\n\nDepuis mon arrivée chez AT Internet, j'utilise alternativement et suivant les langages de programmation utilisés, IntelliJ IDEA (Java / groovy), WebStorm (nodeJS, TS) ou PyCharm (Python).",
+        evaluation: "Je pense être un utilisateur avancé de la suite d'IDEs JetBrains, dans un cadre professionnel. Je sais également qu'il y a probablement un certain nombre de fonctionnalités ou de raccourcis clavier dont je n'ai même pas connaissance. C'est pour cela que je consulte les 'tips' au démarrage de l'application qui me permettent encore de découvrir des fonctionnalités insoupçonnées.",
         certification: ""
       },
       {
@@ -398,9 +398,9 @@ export class CompetenciesService {
         logo: 'logos/jira.png',
         level: 5,
         description: 'Je suis dans l\'entreprise utilisateur et administrateur principal de l\'outil : gestion des projets, des sprints, des backlogs, des tickets, des workflows, des permissions, des tableaux de bord.\n\nJ\'accompagne les utilisateurs à l\'utilisation de JIRA.\n\nJe mets également en place des scripts afin d\'extraire la donnée et de la traiter pour des besoins spécifiques (indicateurs, suivi des workflows, métriques DORA).',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "JIRA est un outil de gestion de projets et de suivi des tâches, qui permet de planifier, de suivre et de gérer les projets de développement logiciel. JIRA propose toutes les fonctionnalités utiles à la gestion de projet, y compris en Agilité : gestion des sprints et kankans, gestion du backlog, des tickets d'exploitation mais propose aussi des fonctionnalités personnalisables avec des champs custom et des workflows paramétrables en fonction des besoins de chaque équipe.",
+        facts: "Mon entreprise Piano a transité vers JIRA en 2022 (après avoir utilisé Redmine pendant des années). J'ai directement été impliqué dans l'utilisation de l'outil, en tant que Product Owner du périmètre 'CI - Outils internes'. Je suis également utilisateur en tant que contributeur à des développements projet, en charge de l'exécution de certaines tâches associées à des EPIC de l'entreprise, comme par exemple pour la mise en place de la conformité ISO 27001.\n\nJe suis aujourd'hui administrateur de l'outil et je m'occupe de l'extraction de données depuis l'API de JIRA puis de leur traitement. Je mets ces données à disposition des équipes et de la direction, elles sont utilisées comme leviers de suivi et d'amélioration de notre efficacité.",
+        evaluation: "J'ai une compétence complète de l'utilisation de JIRA en entreprise, tant dans son utilisation que dans son administration. Je pratique régulièrment les requêtes JQL et l'usage de l'API de l'outil.",
         certification: ""
       },
       {
@@ -409,9 +409,9 @@ export class CompetenciesService {
         logo: 'logos/kubernetes.png',
         level: 4,
         description: 'J\'utilise Kubernetes régulièrement dans le cadre professionnel : développement et déploiement de cronjobs, pods, deployments, services.\n\nGestion des ressources : réservations, limites, autoscaling.',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "Kubernetes est un orchestrateur de conteneurs open source qui permet de déployer, de gérer et de scaler des applications conteneurisées. Kubernetes est un outil très puissant qui permet de gérer de manière automatisée l'exécution, la scalabilité et la disponibilité d'applications conteneurisées. Kubernetes est un outil très utilisé dans les entreprises qui ont adopté le cloud et les conteneurs pour leurs applications.",
+        facts: "Kubernetes est arrivé en 2017 chez AT Internet. J'ai été formé à son utilisation et j'ai pris en charge la création de mes premiers pods et deployments un peu plus tard, en 2019.\n\nMes premiers déploiements dans le cluster 'k8s' de l'entreprise ont été réalisées dans le but de déployer des grids Selenium, avant que l'outil Cypress ne vienne totalement les remplacer. J'ai pris en main les notions de réservation de ressources (limits/requests) mais aussi les notions d'affinité et antiaffinités qui permettaient de répartir les charges et les différents nodes des grids selenium correctement dans le cluster.\n\nEn 2024, j'ai porté certaines mécaniques d'injection de données sous la forme de cronjobs Kubernetes qui s'exécutent régulièrement. J'assure leur monitoring au quotidien depuis Datadog.\n\nJ'utilise régulièrement kubectl pour interagir avec le cluster et je suis capable de déployer des applications de manière autonome.\n\nJ'enseigne également l'utilisation de l'outil en école (Bac +2 / Bac +3).",
+        evaluation: "Je pense avoir de bonnes compétences sur l'usage de l'outil Kubernetes. J'ai une pratique régulière et professionnelle de l'outil, qui me permet de répondre à des besoins variés et complexes. Je n'ai cependant qu'une connaissance partielle de l'administration proprement dite du cluster et des middlewares associés.",
         certification: ""
       },
       {
@@ -420,9 +420,9 @@ export class CompetenciesService {
         logo: 'logos/dtrack.png',
         level: 4,
         description: 'Je suis gestionnaire et administrateur de l\'outil au niveau du groupe Piano, à l\'international.\n\nJ\'assure, avec l\'équipe CI, la gestion des projets, des dépendances, des vulnérabilités, des licences, l\'intégration dans les pipelines de CI, la formation et accompagnement des utilisateurs.',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "Dependency Track est un outil open source de gestion des dépendances logicielles, qui permet de suivre les dépendances, les vulnérabilités et les licences des composants logiciels utilisés dans les applications. L'outil est assez récent et est mis à disposition par l'OWASP. Contrairement à son prédécesseur historique (Dependency Check), il permet des analyses asynchrones et régulières de projets qu'on y référence par l'envoi de fichiers SBOM (Software Bill Of Materials). C'est ainsi plus un serveur actif de gestion des dépendances que l'outil de scan de dépendances qu'était Dependency Check.",
+        facts: "Après avoir déployé en interne l'usage de Dependency Check suite à un Hackathon en 2017, j'ai prototypé l'usage de Dependency Track en 2023. Début 2024, j'ai été en charge de déployer l'outil et de mettre à disposition tous les éléments pour permettre aux équipes de développement d'intégrer les analyses de vulnérabilités dans leurs pipelines de CI.\n\nJe suis aujourd'hui administrateur de l'outil, en charge des montées de version, de la gestion des projets et des utilisateurs.\n\nJ'ai développé des scripts (en python) utilisant l'API de DTrack pour automatiser certaines tâches de maintenance des projets (suppression d'analyses obsolètes par exemple).",
+        evaluation: "J'ai une bonne connaissance de l'outil et de son fonctionnement. Je peux accompagner efficacement les équipes sur son utilisation mais il me reste des aspects à découvrir quant à la gestion des vulnérabilités détectées en elles-mêmes.",
         certification: ""
       },
       {
@@ -431,9 +431,9 @@ export class CompetenciesService {
         logo: 'logos/ATInternet.png',
         level: 5,
         description: 'Je connais très bien l\'outil et suis en mesure de travailler efficacement avec l\'Analytics Suite (Applications Analyzer, Rapports, Dashboard, DataQuery) : extraire des données répondant à des besoins spécifiques, réaliser des analyses avancées et segmentées, personnaliser des reportings et tableaux de bord.',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "Piano Analytics est l'outil de mesure de l'audience et de l'activité des sites web et des applications mobiles de l'entreprise Piano. L'outil propose des fonctionnalités avancées pour l'analyse des données, la création de rapports et de tableaux de bord personnalisés, la segmentation des audiences, la mesure des performances, etc...\n\nPiano Analytics est un outil essentiel pour la prise de décision et l'optimisation des sites web et des applications mobiles. Contrairement à ses principaux concurrents, l'outil est guidé par le respect des données personnelles des internautes, by design. Il est donc très utilisé en Europe et les problématiques afférentes à la protection des données dans de nombreux pays font de lui une alternative de qualité à d'autres grandes enseignes historiques, aux pratiques parfois moins étiques.",
+        facts: "J'ai découvert la suite Piano Analytics en 2015, chez AT Internet. J'ai été formé, en tant qu'employé, à son utilisation, et j'ai présenté la certification utilisateur, telle qu'elle est proposée aux experts analystes en poste chez nos clients. J'ai obtenu cette certification avec le niveau 'Gold' et un très bon score de plus de 95%.",
+        evaluation: "Ma participation active aux développements de l'outil m'a permis de le connaître en profondeur. Je suis capable de répondre à des besoins très variés et complexes, en matière d'analyse de données et de mesure de l'audience. Je suis également en mesure de former et d'accompagner les utilisateurs de l'outil ainsi que les développeurs sur de nombreux aspects fonctionnels.",
         certification: 'Analytis Suite Gold User'
       },
       {
@@ -442,9 +442,9 @@ export class CompetenciesService {
         logo: 'logos/powerbi.png',
         level: 5,
         description: 'J\'implémente des mécaniques de récupération et de traitement de données pour du reporting.\n\nJe crée des dashboards PowerBI, incluant le développement de métriques et colonnes custom (DAX).\n\nMes rapport sont consultés par les membres du département technique et par la direction.',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "PowerBI est un outil de Business Intelligence de Microsoft, qui permet de créer des rapports et des tableaux de bord interactifs, à partir de données provenant de différentes sources. PowerBI propose des fonctionnalités avancées pour la visualisation des données, la création de graphiques mais est également très confortable et puissant pour l'exploration et la fouille de données.",
+        facts: "J'ai découvert PowerBI en 2017 alors que l'entreprise cherchait un remplaçant à SSRS, qui se montrait un peu trop rigide pour la création de rapports personnalisés. Je me suis formé à l'outil et ai pu rapidement proposer un 'Tableau de bord du service' exposant les principales métriques associées à l'activité de l'entreprise : nombre d'utilisateurs, de sites mesurés, de hits collectés et autres indicateurs de respect des SLA par exemple. Le sources de données étaient alors principalement des bases de données SQL alimentées par d'autres mécaniques.\n\nJ'ai poursuivi mon utilisation de l'outil et produit de nombreux rapports au fil des années.\n\nLe dernier rapport en date que j'ai produit, en 2024, expose les indicateurs du workflow des équipes de développement, de la création de l'EPIC à la livraison en production. Ce rapport est consulté par les membres du département technique et par la direction. Les données sont alimentées par une mécanique en python qui récupère les données depuis Gitlab, Sonarqube et JIRA et les combine en un modèle de données que j'ai défini, qui nous permet d'avoir une visibilité à 360° sur nos pratiques de développement.",
+        evaluation: "Je pense être un utilisateur avancé de PowerBI. J'ai une pratique régulière et professionnelle de l'outil. Je suis également en mesure de former et d'accompagner les utilisateurs en interne, que cela soit pour consulter ou pour créer des rapports.",
         certification: ""
       },
       {
@@ -453,9 +453,9 @@ export class CompetenciesService {
         logo: 'logos/soap_ui.png',
         level: 5,
         description: 'Je maîtrise l\'outil pour l\'mplémentation de tests d\'API automatisés, de performance et de sécurité.',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "SOAP UI est un outil de test automatisé d'API, qui permet de réaliser tant des tests fonctionnels que des tests de performance et de sécurité sur des services web. C'est un outil historique et une référence dans le domaine mais qui tend à être remplacé par des outils plus modernes et plus simples à utiliser.",
+        facts: "J'ai commencé à utiliser SOAP UI en 2011, chez F-Secure, principalement dans le cadre de la mise en place de tests de sécurité d'une API. J'ai, à la même période, utilisé aussi l'outil pour des tests de performance (avant de passer sous Neoload pour ce besoin). \n\nEn 2015, j'ai implémenté les premiers tests d'API chez AT Internet avec cet outil. L'usage de la version gratuit m'a contraint à coder moi-même un certain nombre de choses, directement en groovy dans l'outil, comme par exemple les boucles de test, dans le cadre de l'exécution de tests dits 'data driven'.",
+        evaluation: "J'ai un niveau 'expert' de l'usage de SOAP UI. J'ai développé mon expérience par la mise en place de nombreux tests au fil des années.",
         certification: ""
       },
       {
@@ -464,20 +464,20 @@ export class CompetenciesService {
         logo: 'logos/sonarqube.png',
         level: 5,
         description: 'Je suis utilisateur et administrateur de l\'outil au niveau du groupe Piano : gestion des profils et barrières qualité, intégration dans les pipelines de CI.\n\nJ\'assure la formation et l\'accompagnement des utilisateurs, aux côtés de l\'équipe CI.',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "Sonarqube est devenu un outil de référence pour l'analyse statique de code source. L'outil permet de détecter les problèmes de qualité du code, les bugs, les vulnérabilités, les duplications, les mauvaises pratiques, etc... Sonarqube permet à la fois de répondre à des contraintes réglementaires (ISO 27001 par exemple) mais est aussi un très bon outil pour aider les développeurs à améliorer la qualité de leur code et à respecter les bonnes pratiques de développement.",
+        facts: "J'ai lancé mes premières analyses de code dans Sonarqube en 2016 et j'ai diffusé son utilisation dans l'entreprise la même année. J'ai accompagné et formé les développeurs aux pratiques et aux enjeux de l'analyse statique de code. J'ai également pris en charge la mise en place des premiers 'Quality Gates' pour garantir un niveau de qualité minimum sur les projets de l'entreprise.\n\nJe suis aujourd'hui le référent sur l'usage de l'outil pour les équipes de développement. J'assure également la veille sur les nouvelles versions et les nouvelles fonctionnalités de l'outil.",
+        evaluation: "Je pense être un expert de Sonarqube, tant sur l'utilisation que sur la partie administration. C'est un outil que j'apprécie tout particulièrement pour les bénéfices qu'il apporte aux équipes de développement, sans pour autant exécuter le code. Il apporte donc dès les premières phases du cycle une grande valeur, sans avoir besoin d'environnement d'exécution. C'est toute la force de l'analyse statique !",
         certification: ""
       },
       {
         title: 'VSCode',
         category: 'Outils',
         logo: 'logos/vscode.png',
-        level: 4,
+        level: 3,
         description: 'Utilisation régulière, refactoring, debug/tracing, tests',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "VSCode est un éditeur de code source open source, développé par Microsoft. C'est un outil très populaire auprès des développeurs et des étudiants. VSCode est un outil très complet, très ergonomique et très extensible, qui permet de travailler efficacement sur des projets de développement de toutes tailles et de toutes natures. Attention toutefois à la constellation de plugins disponibles qui peuvent parfois ralentir l'outil et ne sont pas forcément du niveau d'utilité annoncé : à consommer avec modération donc !",
+        facts: "J'ai découvert VSCode assez tardivement, en 2019, dans le cadre de mon projet personnel de refonte du site macaveamoi.fr. Je cherchais un IDE gratuit et simple d'utilisation. De nombreuses personnes dans l'entreprise utilisaient cet outil : c'était l'occasion pour moi d'en faire l'expérience aussi !\n\nJ'ai également utilisé cet outil dans le cadre scolaire pour la réalisation de mes projets Angular.",
+        evaluation: "Je pense utiliser correctement cet outil mais suis moins à l'aise à son usage que sur la suite JetBrains dont j'ai plus l'habitude et que j'utilise dans un cadre professionnel.",
         certification: ""
       },
       {
@@ -486,9 +486,9 @@ export class CompetenciesService {
         logo: 'logos/DE.png',
         level: 3,
         description: 'Pratique occasionnelle dans un contexte personnel ou informel',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "-",
+        facts: "J'ai appris l'allemand dès la 6ème et j'ai toujours apprécié la pratique de cette langue. J'ai eu l'occasion de la pratiquer à l'occasion de nombreuses rencontres d'étudiants Allemands ou Suisses allemands logés dans ma famille, qui venaient en France pour apprendre le français.\n\nAu lycée j'écoutais des musiques punk/rock en Allemand (Die Ärzte, Wizo, Rammstein) mais aussi des classiques moins agressifs (Camillo Felgen, Nena, Vico Toriani par ex.).",
+        evaluation: "Après un très bon niveau scolaire et une pratique quasi-courante à l'oral, je pense avoir aujourd'hui un niveau correct en Allemand. Je pourrais cependant améliorer ma pratique de la langue et retrouver tout le vocabulaire oublié au fil des années en la pratiquant plus régulièrement.",
         certification: ""
       },
       {
@@ -497,9 +497,9 @@ export class CompetenciesService {
         logo: 'logos/UK.png',
         level: 4,
         description: 'Pratique professionnelle quotidienne, rédaction de documentation, participation à des réunions internationales, rédaction de mails, rédaction de rapports',
-        definition: "",
-        facts: "",
-        evaluation: "",
+        definition: "-",
+        facts: "Après avoir appris l'Anglais à l'école et toujours obtenu de bons résultats, j'ai eu l'occasion de pratiquer la langue dans un contexte professionnel dès 2010, chez F-Secure. J'ai participé à des réunions internationales, rédigé des mails, des rapports et de la documentation en Anglais.\n\nMes managers ne parlaient pas Français et l'Anglais était donc le seule langue disponible pour communiquer avec eux.\n\nAprès une pause de la pratique professionnelle de la langue, j'ai repris en 2021 chez AT Internet, devenue membre du groupe international Piano, où l'Anglais est redevenue ma langue de travail principale. J'ai à nouveau participé à des réunions internationales, rédigé des mails, des rapports et de la documentation en Anglais. J'ai également produit des articles et bilans en Anglais pour la direction.\n\nA ma demande, j'ai pu bénéficier en 2022 de cours de perfectionnement, ce qui m'a permis de valider un niveau officiel de la langue par un organisme agréé: 'C1 > C1+'.\n\nDepuis plusieurs je lis des ouvrages professionnels en Anglais, parmi lesquels : Refactoring (M. Fowler), Measure What Matters (J. Doerr), Accelerate (N. Forsgren) ou encore mon dernier en date (en cours actuellement) : Learning to scale at Theodoro group (Regis Medina).",
+        evaluation: "Je me sens très à l'aise en Anglais. Je suis complètement opérationnel, tant à l'oral qu'à l'écrit dans le cadre professionnel. Je peux parfois avoir quelques difficultés à comprendre certains accents et je ne peux pas prétendre à une pratique totalement courante, par manque de vocabulaire parfois, sans que cela ne constitue vraiment un frein dans mes échanges avec des anglophones.",
         certification: 'C1 > C1+'
       },
       {
@@ -508,8 +508,8 @@ export class CompetenciesService {
         logo: 'logos/TR.png',
         level: 3,
         description: 'Pratique occasionnelle dans un contexte personnel ou informel',
-        definition: "",
-        facts: "",
+        definition: "-",
+        facts: "Arrivé en Turquie en 2004, j'ai rapidemnt appris le turc pour communiquer avec la population et vivre au quotidien. Ankara (où se trouve l'Ambassade de France où je travaillais) n'est en effet pas une ville touristique et la langue turque est donc indispensable pour communiquer avec les commerçants, les administrations, les voisins, etc...\n\nJ'ai atteint un niveau tout à fait acceptable qui m'a permis de me débrouiller seul dans la vie quotidienne et même de passer pour un Turc dans certaines situations.\n\nAprès avoir quitté le pays en fin de mission en 2006, j'ai eu l'occasion lors de voyage ultérieurs de constater que je n'avais pas perdu la langue et que je pouvais encore prendre part à des échanges assez fluides.",
         evaluation: "",
         certification: ""
       }
