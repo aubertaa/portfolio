@@ -12,7 +12,16 @@ export interface Project {
     title: string;
     url: string;
   }[];
-  description: string;
+  presentation: string;
+  lancement: string;
+  steps: string;
+  results: {
+    for_me: string;
+    for_the_company: string;
+  },
+  stakeholders: string;
+  next_steps: string;
+  my_analysis: string;
 }
 
 @Component({

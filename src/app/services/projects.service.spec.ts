@@ -27,7 +27,13 @@ describe('ProjectsService', () => {
     expect(firstProject.involved_competencies).toBeDefined();
     expect(firstProject.image).toBeDefined();
     expect(firstProject.documents).toBeDefined();
-    expect(firstProject.description).toBeDefined();
+    expect(firstProject.presentation).toBeDefined();
+    expect(firstProject.lancement).toBeDefined();
+    expect(firstProject.steps).toBeDefined();
+    expect(firstProject.results).toBeDefined();
+    expect(firstProject.stakeholders).toBeDefined();
+    expect(firstProject.next_steps).toBeDefined();
+    expect(firstProject.my_analysis).toBeDefined();
 
     // Check that the involved_competencies is an array and contains correct values
     expect(Array.isArray(firstProject.involved_competencies)).toBe(true);
@@ -50,6 +56,5 @@ describe('ProjectsService', () => {
     expect(firstProject.domaine).toBe('Stratégie d\'entreprise');
     expect(firstProject.image).toBe('assets/images/unfix reorg.png');
     expect(firstProject.documents[0].url).toBe('assets/documents/orga_unfix.pptx');
-    expect(firstProject.description).toContain('Réflexions et mise en place d\'une réorganisation des équipes de développement');
   });
 });

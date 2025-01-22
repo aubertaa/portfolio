@@ -22,7 +22,16 @@ describe('ProjectsComponent', () => {
                     involved_competencies: ['Development', 'Testing'],
                     image: 'assets/images/project1.png',
                     documents: [{ title: 'Document 1', url: 'assets/documents/project1.docx' }],
-                    description: 'This is a description of the project.'
+                    presentation: "presentation",
+                    lancement: "lancement",
+                    steps: "steps",
+                    results: {
+                        for_me: 'for me',
+                        for_the_company: 'for the company'
+                    },
+                    stakeholders: 'stakeholders',
+                    next_steps: 'next steps',
+                    my_analysis: 'analysis'
                 }
             ])
         };
@@ -62,7 +71,16 @@ describe('ProjectsComponent', () => {
                 involved_competencies: ['Development', 'Testing'],
                 image: 'assets/images/project1.png',
                 documents: [{ title: 'Document 1', url: 'assets/documents/project1.docx' }],
-                description: 'This is a description of the project.'
+                presentation: "presentation",
+                lancement: "lancement",
+                steps: "steps",
+                results: {
+                    for_me: 'for me',
+                    for_the_company: 'for the company'
+                },
+                stakeholders: 'stakeholders',
+                next_steps: 'next steps',
+                my_analysis: 'analysis'
             }
         ]);
     });
@@ -81,13 +99,11 @@ describe('ProjectsComponent', () => {
         const projectDate = fixture.debugElement.query(By.css('.timeline-date')).nativeElement.textContent;
         const projectDomain = fixture.debugElement.query(By.css('.timeline-domain')).nativeElement.textContent;
         const projectImage = fixture.debugElement.query(By.css('.timeline-image')).nativeElement;
-        const projectDescription = fixture.debugElement.query(By.css('.timeline-description')).nativeElement.innerHTML;
 
         expect(projectTitle).toBe('Test Project 1');
         expect(projectDate).toBe('2025');
         expect(projectDomain).toBe('Software Engineering');
         expect(projectImage.src).toContain('assets/images/project1.png');
-        expect(projectDescription).toContain('This is a description of the project.');
     });
 
     it('should render competency badges correctly', () => {
