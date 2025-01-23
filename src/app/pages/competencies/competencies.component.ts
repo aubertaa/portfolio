@@ -9,7 +9,9 @@ export interface Competency {
   category: string;
   logo: string;
   level: number;
-  description: string;
+  definition: string;
+  facts:string;
+  evaluation: string;
   certification: string;
 }
 @Component({

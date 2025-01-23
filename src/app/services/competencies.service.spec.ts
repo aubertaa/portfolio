@@ -27,15 +27,17 @@ describe('CompetenciesService', () => {
     expect(firstCompetency.category).toBeDefined();
     expect(firstCompetency.logo).toBeDefined();
     expect(firstCompetency.level).toBeDefined();
-    expect(firstCompetency.description).toBeDefined();
+    expect(firstCompetency.definition).toBeDefined();
+    expect(firstCompetency.facts).toBeDefined();
+    expect(firstCompetency.evaluation).toBeDefined();
     expect(firstCompetency.certification).toBeDefined();
   });
 
-  it('should handle competencies with multiline descriptions', () => {
+  it('should handle competencies with multiline definition', () => {
     const competencies = service.getCompetencies();
     const firstCompetency = competencies[0];
 
-    expect(firstCompetency.description).toContain('\n');  // Ensure description contains newline characters
+    expect(firstCompetency.definition).toContain('\n');  // Ensure definition contains newline characters
   });
 
   it('should return a competency with an empty certification field if not provided', () => {
