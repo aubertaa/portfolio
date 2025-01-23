@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { ProjectsService } from '../../services/projects.service';
 import { PreloadImagesService } from '../../services/preload-images.service';
 
@@ -33,6 +33,9 @@ export class ProjectsComponent implements OnInit{
 
   projects: Project[] = [];
 
+  selectedProject: any = null;
+  showDescription: boolean = false;
+
   constructor(private projectsService: ProjectsService,
               private preloadImagesService: PreloadImagesService
   ) { }
@@ -50,5 +53,30 @@ export class ProjectsComponent implements OnInit{
     this.preloadImagesService.preloadImages(imagesToPreload);
 
   }
+
+  onCardClick (project: any) {
+    // Toggle description visibility
+    this.showDescription = !this.showDescription;
+    this.selectedProject = project;
+
+  }
+
+
+  closeModal () {
+    // Close the modal by resetting selectedCompetency
+    this.showDescription = false;
+    this.selectedProject = null;
+  }
+
+
+  // Close modal if clicked outside
+  @HostListener('document:click', ['$event'])
+  onDocumentClick (event: MouseEvent) {
+    const modalElement = document.querySelector('.popin-modal');
+    if (modalElement && !modalElement.contains(event.target as Node)) {
+      this.closeModal();
+    }
+  }
+
 
 }

@@ -7,6 +7,15 @@
   text-align: center;
 }
 
+.timeline-content {
+  cursor: pointer;
+}
+
+.timeline-content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
 .timeline {
   display: flex;
   flex-direction: column;
@@ -25,6 +34,78 @@
   background: #ccc;
 }
 
+
+/* Description Panel Styling */
+.description-panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s;
+}
+
+.description-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Popin Modal Styling */
+.popin-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1050;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.popin-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 80%;
+  max-height: 100%;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.popin-header {
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.popin-header h4 {
+  margin: 0;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #000;
+}
+
+.popin-body {
+  margin-top: 20px;
+  max-height: calc(80vh - 200px); /* Adjust this based on the header and footer height */
+  overflow-y: auto; /* Enable vertical scroll if content overflows */
+}
+
+.popin-footer {
+  margin-top: 20px;
+  text-align: right;
+}
+
+
 /* Media query for small screens */
 @media (max-width: 900px) {
   .timeline-item {
@@ -34,6 +115,7 @@
 
   .timeline-item .timeline-content {
     width: 95%;
+    
   }
   .timeline-item .timeline-content.left {
     left: 0%;
@@ -64,7 +146,7 @@
   }
 
   .timeline-item .timeline-content {
-    width: 50%;
+    width: 30%;
   }
 
   .timeline-item .timeline-content.left {
@@ -72,7 +154,7 @@
   }
 
   .timeline-item .timeline-content.right {
-    right: 2%;
+    right: 21%;
   }
 
   .timeline-content::after {
@@ -110,7 +192,7 @@
 
 .timeline-item {
   position: relative;
-  margin: 20px 0;
+  margin-bottom: 40px;
   word-wrap: break-word;
 }
 
@@ -195,4 +277,35 @@
 
 .timeline-document-link:hover {
   text-decoration: underline;
+}
+
+.title-intro {
+  color: #333;
+}
+
+.title-lancement {
+  color: #007bff;
+}
+
+.title-steps {
+  color: #007bff;
+}
+
+
+.title-results {
+  color: #007bff;
+}
+
+
+.title-stakeholders {
+  color: #8e44ad; 
+}
+
+.title-next_steps {
+  color: #8e44ad;
+}
+
+
+.title-my_analysis {
+  color: #8e44ad;
 }
