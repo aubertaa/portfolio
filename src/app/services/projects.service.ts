@@ -33,7 +33,7 @@ export class ProjectsService {
         my_analysis: ""
       },
       {
-        title: 'Implémentation et suivi des métriques DORA',
+        title: 'Implémentation et suivi des métriques du cycle de développement',
         date: '2024',
         domaine: 'Stratégie d\'entreprise',
         involved_competencies: [
@@ -43,43 +43,39 @@ export class ProjectsService {
         ],
         image: 'assets/images/KPIs.png',
         documents: [],
-        description: 'Extraction et suivi des métriques du cycle de développement logiciel (DORA) pour mesurer l\'efficacité de notre chaîne de production logicielle.\n\nLes métriques sont extraites des outils de la chaîne de production logicielle (JIRA, Gitlab, Sonarqube) via des scripts python, et sont agrégées et visualisées via PowerBI. Les métriques sont suivies sur le long terme pour mesurer l\'impact des actions d\'amélioration continue. Les points de contention du workflow sont identifiés et des actions d\'amélioration peuvent être mises en place.',
-        presentation: "",
-        lancement: "",
-        steps: "",
+        presentation: "Ce projet vise à extraire et suivre des métriques du cycle de développement pour mesurer l'efficacité de notre chaîne de production logicielle.\n\nLes métriques sont extraites des outils de la chaîne de production logicielle (JIRA, Gitlab, Sonarqube) via des scripts python, puis elles sont agrégées, exploitées et visualisées dans PowerBI.",
+        lancement: "Ce projet commence après la définition et la validation des indicateurs à suivre pour mesurer l'efficacité de notre production logicielle. Les indicateurs sont définis en 2023 et je commence à les extraire et à les suivre en 2024.",
+        steps: "Les premières extractions de données concernent les indicateurs de dette et de maintenabilité du code. Je code les scripts qui les extraient régulièrement via l'API de Sonarqube, puis les traitent une première fois avant de les injecter dans une base de données SQL dont j'ai défini le modèle en amont. Certains projets apparaissent déjà comme techniquement endettés, ce qui correspond à la réalité ressentie par les équipes concernées. Des actions sont alors validées par la direction qui dispose à présent de véritables informations quant à la santé de ces projets, au delà du ressenti des développeurs.\n\n\n\nDurant la phase suivante, je mets en place les extractions des indicateurs liés à la production de code des équipes, depuis l'API Gitlab (merge requests, nombre de lignes de code, profondeur des revues de code, temps passé entre les différentes phases...) et les indicateurs liés aux workflows des équipes, via l'API de JIRA (temps passé en développement, en revue, en test, en attente...). Ces indicateurs sont plus complexes à extraire et à traiter, car ils nécessitent de croiser des données de différentes sources et de les agréger de manière pertinente. Le modèle de données est complexe et je relève le challenge qui consiste à constituer un ensemble de données cohérent. Nous avons alors la possibilité de croiser les informations provenant des différents outils utilisés dans notre activité.\n\n\n\nLa définition des visualisations est un vrai challenge : je passe par une phase au cours de laquelle je dispose de multiples informations, qu'il peut être difficile d'interpréter et surtout de prendre en main pour quelqu'un qui n'est pas encore familier avec ces données. En collaboration avec les premières équipes qui s'intéressent à ces éléments, je mets en place des visualisations plus simples et j'enrichis les données pour répondre aux besoins exprimés. J'utilise le langage DAX de PowerBI pour le calcul de métriques avancées et de colonnes conditionnelles offrant alors des possibilités de filtres et d'exploration étendues.\n\n\n\nFin 2024, je mène des analyses de workflow avec les équipes volontaires et je fais une présentation des constatations que nous avons pu faire. Ces équipes prennent alors leurs premières actions d'amélioration.",
         results: {
-          for_me: "",
-          for_the_company: ""
+          for_me: "Ce projet m'a permis une vraie prise de hauteur sur nos mécaniques de production de logiciels. Je suis persuadé que ces indicateurs constituent une mine d'informations qu'il nous reste à exploiter plus largement.",
+          for_the_company: "L'entreprise découvre des possibilités d'évaluation de son processus de production et entrevoit les premières pistes sérieuses afin de progresser et d'améliorer son efficacité. Les équipes montrent un intérêt certain pour ces indicateurs et commencent à les utiliser pour observer leur activité.",
         },
-        stakeholders: "",
-        next_steps: "",
-        my_analysis: ""
+        stakeholders: "La direction et les équipes de développement ont été mes interlocuteurs sur ce projet.",
+        next_steps: "L'étape suivante consiste à exploiter plus finement ces données, définir des dashboards par objectif pour disposer d'une vue d'ensemble simple et rapide, puis de dashboards plus avancés pour explorer les données plus en profondeur. La qualité des données elle-mêmes peut également être améliorée, comme cela a déjà été le cas, au fil des retours des équipes et de l'analyse des valeurs extrêmes par exemple, dans une démarche lean.",
+        my_analysis: "Ces indicateurs et l'observabilité de nos processus sont des éléments essentiels pour permettre une croissance et une progression efficace de notre entreprise. Les équipes sont demandeuses de ces informations et je suis convaincu que nous avons là un levier puissant pour améliorer notre efficacité, tout en améliorant l'ecosystème dans lequel évoluent les équipes."
       },
       {
         title: 'Définition et mesure de l\'efficacité de notre chaîne de développement logicielle',
         date: '2023',
         domaine: 'Stratégie d\'entreprise',
         involved_competencies: [
-          "PowerBI",
           "Management",
-          "Python",
           "JIRA",
           "Gitlab",
           "Sonarqube"
         ],
         image: 'assets/images/Efficiency.png',
         documents: [{ title: 'l\'article interne', url: 'assets/documents/Measuring our efficiency.pdf' }],
-        description: "Définition des indicateurs de l'efficacité de la production logicielle de l'entreprise autour de 4 axes principaux : la vitesse de production, la qualité de nos livrables, les cadences des équipes, la prédictabilité des livraisons.\n\nLe suivi de ces indicateurs est assuré via PowerBI (rapports non publics), exploitant de la donnée issue des outils de la chaine de production logicielle via des scripts python.",
-        presentation: "",
-        lancement: "",
-        steps: "",
+        presentation: "Ce projet est lié aux indicateurs de l'efficacité de la production logicielle de l'entreprise autour de 4 axes principaux : la vitesse de production, la qualité de nos livrables, les cadences des équipes, la prédictabilité des livraisons.\n\nLe suivi de ces indicateurs est assuré via PowerBI (rapports non publics), exploitant de la donnée issue des outils de la chaine de production logicielle via des scripts python.",
+        lancement: "Cette aventure commence pour moi en 2021, après la lecture de différents ouvrages traitant de la performance des entreprises de développement logiciel, parmi lesquels 'Accelerate: The Science Behind Devops' de Nicole Forsgren, Jez Humble et Gene Kim. Les principaux indicateurs que je suis sont par exemple le nombre de bugs en production ou sur les environnements internes, le temps passé en maintenance dans les équipes de développement : des indicateurs permettant plus de suivre l'évolution de la non qualité. La qualité des livraisons augmentant de façon significative, ces indicateurs deviennent compliqués à interpréter car beaucoup moins représentatifs (voir conférence sur le sujet), ils ne peuvent alors plus constituer des éléments de pilotage réel de notre amélioration.",
+        steps: "En 2024, je me pose alors la question suivante : comment mesurer l'efficacité de notre production logicielle ? J'identifie 4 axes principaux de l'efficacité, indissociables les uns des autres : la vitesse de production, la qualité de nos livrables, les cadences des équipes, la prédictabilité des livraisons. Il me parait en effet nécessaire et suffisant, pour être productif de produire VITE des logiciels de QUALITE et de livrer REGULIEREMENT les fonctionnalités attendues, conformément à nos ENGAGEMENTS.\n\n\n\nC'est sur cette base que je définis les indicateurs à suivre pour mesurer notre efficacité : notre niveau de dette technique (mesuré par Sonarqube), le nombre de bugs de production (qui reste important à maîtriser), le Lead Time de nos stories (le temps entre le moment où une story est créée et le moment où elle est déployée en production), \"l'étirement\" des EPICs (je l'ai nommé ainsi, il s'agit du temps passé entre le démarrage de l'implémentation de la première story d'une EPIC et la fin de l'implémentation de la dernière story d'une EPIC), le nombre et le volume de merge requests (pour mesurer la cadence), le pourcentage d'objectifs atteints et le nombre d'éléments qui 'glissent' (ne respectent pas les délais estimés).\n\n\n\nJe présente ces éléments aux équipes et j'insiste sur le fait que tous ces indicateurs doivent être considérés ensemble sans quoi ils perdent de leur sens. J'explique dans ce cadre la loi de Goodhart : lorsqu'une mesure devient un objectif, elle cesse d'être une bonne mesure. On peut en effet très facilement améliorer un des indicateurs en dégradant les autres.",
         results: {
-          for_me: "",
-          for_the_company: ""
+          for_me: "Avec cette étude, j'ai pu rendre objectifs les éléments que je souhaite suivre pour mesurer l'efficacité de la production logicielle de l'entreprise et des équipes de développement. Cela n'a pas été un chemin facile, mais je dispose de valeurs mesurables qu'il est important maintenant de bien analyser pour prendre de bonnes décisions.",
+          for_the_company: "Le gain pour l'entreprise est de pouvoir envisager des actions d'amélioration continue sur des bases mesurables, en dehors des considérations subjectives qui sont très courantes en ce domaine."
         },
-        stakeholders: "",
-        next_steps: "",
-        my_analysis: ""
+        stakeholders: "Tout le monde dans l'entreprise est concerné par ces indicateurs, tant les équipes de développement que le management. J'ai d'abord présenté ces indicateurs à mon manager pour obtenir sa validation avant de communiquer plus largement sur le sujet auprès des équipes.",
+        next_steps: "Les indicateurs sont définis et disponibles, il est maintenant nécessaire de les suivre et de les analyser pour en tirer des conclusions et définir des actions d'amélioration pertinentes. Ce travail a commencé et certaines équipes ont commencé à se les approprier pour les suivre et les analyser.",
+        my_analysis: "A l'heure où l'industrie logicielle cherche à toujours mieux performer, sans pour autant toujours savoir comment mesurer cette performance, ces indicateurs me semblent pertinents pour mesurer l'efficacité de notre production logicielle. Je suis conscient que ces indicateurs ne sont pas parfaits et qu'ils peuvent être améliorés, mais je suis satisfait de la démarche que j'ai menée pour les définir et j'ai hâte de bénéficier d'un certain recul pour progresser sur le sujet."
       },
       {
         title: 'Backoffice utils',
@@ -93,21 +89,20 @@ export class ProjectsService {
         ],
         image: 'assets/images/backoffice_utils.png',
         documents: [],
-        description: 'Nombreux scripts de backoffice pour automatiser des tâches récurrentes: suppression de projets obsolètes (sonarqube), archivage automatique de repositories / contrôle des expirations de tokens (gitlab), alerting quotidien / hebdomadaire (respect des pratiques ISO27001, surveillance des environnements internes)...',
-        presentation: "",
-        lancement: "",
-        steps: "",
+        presentation: "Nombreux scripts de backoffice pour automatiser des tâches récurrentes: suppression de projets obsolètes (sonarqube), archivage automatique de repositories / contrôle des expirations de tokens (gitlab), alerting quotidien / hebdomadaire (respect des pratiques ISO27001, surveillance des environnements internes)...",
+        lancement: "Je mets en place des premiers scripts sur mon poste, pour différents usage : en python principalement. Puis le nombre de scripts augmente et le besoin de les centraliser se fait sentir. Je crée donc le projet 'backoffice_utils' qui regroupe l'ensemble des scripts et outils qui permettent d'assurer un certain nombre de tâches de back office dans l'entreprise, sur le périmètre des outils CI.",
+        steps: "D'abord sous la forme de scripts isolés, le projet devient rapidement un produit à part entière : une collection (libs) de méthodes utilitaires (gestion des dates, manipulation de données, de chaines, objets json...) et de méthodes pour interagir avec les outils de la chaine de production logicielle (JIRA, Gitlab, Sonarqube). Il devient alors possible de coder différents utilitaires utilisant ces briques pour répondre à des besoins variés : archivage automatique de projets obsolètes dans Gitlab, système d'alerte en cas de détection de non conformité ISO 27001 sur des dépôts Gitlab, extraction d'indicateurs de qualité de code (Sonarqube), extraction d'informations liées aux workflows et traitement des tickets (JIRA), détection de tokens expirés dans Gitlab, etc...\n\n\n\nL'exécution des différents outils est planifiée sous forme de jobs Jenkins pour certaines et déclenchent l'envoi de notifications (slack et/ou email) en cas de détection de problèmes. Certains autres outils buildés puis packagés sous forme d'images Docker et sont exécutés à la demande, via des commandes locales ou des scripts Jenkins.\n\n\n\nCes outils de backoffice procèdent quotidiennement à des opérations essentielles et ont permis de libérer du temps pour différentes personnes dans l'entreprise, qui n'ont plus à effectuer ces tâches manuellement. Ils entrent parfaitement dans la démarche DevOps d'automatisation et de monitoring de notre processus et de nos pratiques. Les alertes reçues sont analysées et traitées de manière adaptée (par moi même et pour certaines d'entre elles directement par les équipes de développement).",
         results: {
-          for_me: "",
-          for_the_company: ""
+          for_me: "J'ai gagné en efficacité en donnant une véritable structure de 'produit' à un outillage composé de différents scripts désordonnés. J'ai au cours de ces mises en place, aussi pu renforcer mes compétences en python et parfaire ma connaissance des outils de la chaine de production logicielle et de leur API.",
+          for_the_company: "Ce projet a contribué à optimiser le temps investi pour différentes tâches répétitives et a permis également de supprimer une dépendance potentiellement trop risquée à mon poste, mes connaissances et mon outillage 'personnel'."
         },
-        stakeholders: "",
-        next_steps: "",
-        my_analysis: ""
+        stakeholders: "J'ai été sollicité par différentes équipes (sécurité, developpement, gestion de projets) pour mettre en place des outils de backoffice répondant à des besoins spécifiques.",
+        next_steps: "Les 'backoffice utils' s'étendent en fonction des besoins et la structure modulaire en python a déjà permis de partager des méthodes utilitaires qui constituent aujourd'hui une véritable librairie de fonctions utiles dans notre écosystème applicatif. Je continue à les maintenir et à les faire évoluer en fonction des besoins.",
+        my_analysis: "Contrairement à cette situation très courante où chacun dispose de nombreux scripts sur son poste, j'ai pris le temps de centraliser ces scripts et de les transformer en un véritable produit. Je suis satisfait d'avoir pu transformer ces éléments et connaissances en véritable propriété de l'entreprise."
       },
       {
         title: 'Obtention de la certification d\'entreprise ISO 27001',
-        date: '2021',
+        date: '2022',
         domaine: 'Développement',
         involved_competencies: [
           "CI/CD",
@@ -116,17 +111,16 @@ export class ProjectsService {
         ],
         image: 'assets/images/ISO.png',
         documents: [{ title: 'l\'article interne', url: 'assets/documents/ISO27001.pdf' }],
-        description: 'Accompagnement des équipes dans la mise en place des pratiques de sécurité nécessaires pour obtenir la certification ISO 27001.\n\nDéfinition des objectifs, des pratiques et des outils à mettre en place : gestion des risques, des vulnérabilités, des configurations, des changements. Déploiement et contrôle des pratiques de sécurité, adaptations du processus de développement et formation des développeurs. Participation aux audits internes et externes, suivi des actions correctives et préventives.',
-        presentation: "",
-        lancement: "",
-        steps: "",
+        presentation: "Il s'agit ici de l'accompagnement des équipes dans la mise en place des pratiques de sécurité nécessaires pour obtenir la certification ISO 27001.\n\nDéfinition des objectifs, des pratiques et des outils à mettre en place : gestion des risques, des vulnérabilités, des configurations, des changements. Déploiement et contrôle des pratiques de sécurité, adaptations du processus de développement et formation des développeurs. Participation aux audits internes et externes, suivi des actions correctives et préventives.",
+        lancement: "Début 2022 et suite à l'intégration de notre entreprise dans le groupe Piano Software, il a été décidé de lancer une démarche de certification ISO 27001 pour l'ensemble des entités du groupe. Compte tenu de mon rôle dans l'entreprise, j'ai été désigné pour piloter cette démarche pour ce qui relevait des aspects liés au cycle de développement de notre entité. L'objectif est confirmé en mars : obtenir la certification ISO 27001 d'ici la fin de l'année !",
+        steps: "Première étape de ce projet : prendre connaissance des différents aspects de l'ISO et des contraintes que l'on doit respecter pour l'obtenir. Je participe alors aux premières réunions dont l'objectif est d'identifier les éléments de non conformité de nos pratiques en l'état. Deux grands axes sont identifiés : 'respecter la norme dans nos processus' et 'être en mesure de le démontrer'.\n\n\n\nNotre processus de développement, grâce aux efforts des équipes pendant les années précédentes, est déjà bien documenté et suit des pratiques de qualité. Il est cependant nécessaire de le renforcer pour être en conformité avec la norme. Je mets en places les éléments techniques de conformité dans nos outils : barrières qualité liées aux analyses de code statiques (S.A.S.T.) obligatoires, caractère bloquant dans les pipelines de toutes les équipes en cas de détection de potentielles vulnérabilités, intégration entre les différents outils (Jenkins / JIRA / Gitlab) pour garantir la traçabilité des actions et des décisions.\n\n\n\nEn parallèle, je présente les enjeux aux équipes et accompagne les développeurs dans l'adoption de nouvelles pratiques obligatoires : application du '4 eyes principle' : l'usage des Merge Requests et des revues de code systématiques devient obligatoire. Les équipes adoptent rapidement ces pratiques et je prends contact avec chaque développeur pour affiner la mise en place quand cela est nécessaire.\n\n\n\nLe premier audit interne, 3 mois plus tard montre des résultats encourageants : les pratiques sont bien respectées, les outils sont bien utilisés et les équipes sont sensibilisées. Quelques non conformités persistent et seront rapidement corrigées pendant l'été. L'audit externe officiel est planifié pour novembre : je m'assure que tout est bien en place et j'assure la présentation des éléments de conformité à l'auditeur. L'audit est un succès et nous obtenons la certification ISO 27001 en décembre 2022.",
         results: {
-          for_me: "",
-          for_the_company: ""
+          for_me: "J'ai découvert lors de ce projet le cheminement de la préparation d'une entreprise en vue d'obtenir la certification ISO 27001. J'ai pu renforcer mes compétences en termes de sécurité et découvrir les nombreux aspects de la sécurité dans les étapes d'une chaine de développement logiciel. L'exercice d'audit officiel était également une nouveauté pour moi, c'est une expérience très enrichissante et formatrice.",
+          for_the_company: "L'obtention de l'ISO 27001 est un gage de qualité et de sécurité pour nos clients. C'est un élément différenciant pour notre entreprise et un atout pour nos futures collaborations. Dans un secteur ou la sécurité est devenu un enjeu crucial, cette certification est un atout majeur pour notre entreprise."
         },
-        stakeholders: "",
-        next_steps: "",
-        my_analysis: ""
+        stakeholders: "Dans le cadre de ce projet mes interlocuteurs ont été les équipes de développement, les équipes de sécurité et la direction du groupe via le Chief Security Officer. Les auditeurs externes ont aussi été des interlocuteurs à considérer pour la réussite de ce projet.",
+        next_steps: "Je participe chaque année à l'audit de renouvellement de la certification et je m'assure que les pratiques de sécurité sont bien respectées par les équipes. Je m'assure également que les nouveaux arrivants sont bien formés aux pratiques de sécurité dans le cycle de développement.",
+        my_analysis: "J'ai mené ce projet avec un objectif clair, des étapes bien définies et des résultats mesurables. J'ai pu découvrir un nouveau domaine de compétences : la sécurité, ce qui m'a beaucoup intéressé. Je pense que cette certification est un atout majeur pour notre entreprise et je suis fier d'avoir pu y contribuer."
       },
       {
         title: 'VolatileEC2',
@@ -140,17 +134,16 @@ export class ProjectsService {
         ],
         image: 'assets/images/volatileEC2.png',
         documents: [{ title: 'le dépôt', url: 'https://github.com/aubertaa/volEC2/' }],
-        description: 'Environnement pédagogique en InfraAsCode utilisé pour la formation des alternants aux pratiques et outils de la CI et DevOps. Déploiement d\'une infrastructure de développement logiciel en un clic.',
-        presentation: "",
-        lancement: "",
-        steps: "",
+        presentation: "VolatileEC2 est un environnement pédagogique en InfraAsCode utilisé pour la formation des alternants aux pratiques et outils de la CI et à la culture DevOps. Il permet de déployer en un clic une infrastructure de développement logiciel complète, avec un serveur Jenkins, un serveur Sonarqube, un gestionnaire de livrables (Nexus) et un orchestrateur de conteneurs (Kubernetes).",
+        lancement: "Ce projet est né pour répondre à un besoin simple : disposer d'un environnement de travail à disposition des étudiants au cours de certains modules d'enseignement, tout en limitant les coûts , en garantissant une certaine qualité de service et ne nécessitant pas d'investissement trop important de préparation ni d'entretien. Après plusieurs déconvenues à l'usage de Raspberry Pi successifs : carte de stockage HS, surchauffe, manque de puissance, j'ai décidé de passer à une solution plus robuste et plus pérenne : l'utilisation d'instances EC2 sur AWS, totalement décrites 'as code'.",
+        steps: "La mise en place de ce projet a nécessité de décrire sous forme de scripts et de lignes de commandes les différentes installations et configuration de logiciels que je souhaitais exposer aux étudiants. CloudFormation d'AWS m'a permis de définir la stack technique : une instance EC2, à laquelle j'ai associé un Security Group pour limiter les accès et définir des règles de sécurité strictes afin d'autoriser les accès uniquement depuis certaines adresses IP (pour mon accès et celui depuis l'école uniquement). Quleques paramétrages système ont été nécessaires pour éviter les applications d'updates intempestives, qui pouvaient survenir pendant les cours et perturber leur bon déroulement.\n\n\n\nL'étape suivante a consisté à installer tous les éléments applicatifs dessus, les configurer sous forme de services (init.d) et les paramétrer pour l'usage souhaité. Des scripts 'cfn-init' procèdent donc au lancement de la machine et automatiquement, à l'installation de docker, Jenkins, Sonarqube, Nexus et un cluster Kubernetes (via Minikube). Des étapes spécifiques permettent la génération et l'utilisation d'un certificat de sécurité permettant de disposer du protocole sécurisé https, qui est devenu un prérequis incontournable dans les navigateurs Web. Un registry docker privé local est également configuré pour héberger les images docker qui sont créées par les étudiants pendant le cours. Un agent datadog conteneurisé est également installé pour pouvoir assurer le mionitoring des outils (jenkins, nexus, docker, kubernetes). L'application servrira aussi pendant les cours pour la prise en main par les étudiants et l'expérimentation des pratiques SRE par l'application de différents scénarios de pannes et de reprises.\n\n\n\nPour garantir un accès depuis l'extérieur, une configuration de DNS dynamiques est également effectuée. Ne trouvant pas justifié de payer un service de stockage à l'année pour cela, j'ai fait le choix de stocker moi même le backup Jenkins (jobs et configurations). J'ai donc, quand je démarre mon environnement, à attendre simplement quelques minutes, à uploader mon backup et à lancer une ligne de commande et le serveur est prêt pour donner cours !",
         results: {
-          for_me: "",
-          for_the_company: ""
+          for_me: "En menant ce projet, j'ai atteint mon objectif de disposer d'un environnement de travail complet et robuste pour les étudiants, qui ne nécessite pas d'investissement de temps important pour sa maintenance. J'ai pu également renforcer mes compétences en InfraAsCode et dans l'installation automatisée de différents outils. Le coût d'exécution est d'environ 3$/jour d'utilisation, ce qui est tout à fait raisonnable pour un environnement de travail complet et prêt à l'emploi.",
+          for_the_company: "L'école bénéficie alors d'un environnement de travail complet et prêt à l'emploi pour les étudiants, qui peuvent se concentrer sur les apprentissages et les pratiques de CI, sans avoir à financer ou entretenir des serveurs dont les applicatifs pourraient devenir rapidement obsolètes et pour une utilisation seulement quelques jours par an."
         },
-        stakeholders: "",
-        next_steps: "",
-        my_analysis: ""
+        stakeholders: "Mes interlocuteurs sur ce projet ont été la direction de l'école, le responsable pédagogique qui a validé la démarche et les étudiants qui ont pu bénéficier de cet environnement de travail.",
+        next_steps: "Je poursuis ce projet par un entretien régulier des applications qui s'y trouvent, l'application des mises à jour et la réalisation de nouveaux backups que je conserve.",
+        my_analysis: "J'ai par ce projet, une utilisation typique du cloud et des avantages qu'il propose : un environnement de travail complet sur le principe 'pay as you go' et sans me soucier de potentielles pannes matérielles qui m'ont apporté un certain nombre de déconvenues par le passé."
       },
       {
         title: 'HitMaker',
