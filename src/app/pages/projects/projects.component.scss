@@ -241,13 +241,14 @@
   border-radius: 5px;
 }
 
-.competency-badge {
+.competency-badge a {
   background-color: #007bff;
   color: white;
   padding: 5px 10px;
   border-radius: 5px;
   margin: 5px; /* Adjusted margin for better spacing */
   font-size: 14px;
+  text-decoration: none;
 }
 
 .timeline-description {

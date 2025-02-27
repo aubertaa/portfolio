@@ -1,4 +1,5 @@
 import { Component, HostListener, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { CompetenciesService } from '../../services/competencies.service';
 import { PreloadImagesService } from '../../services/preload-images.service';
 
@@ -28,7 +29,8 @@ export class CompetenciesComponent implements OnInit {
   showCertifiedOnly: boolean = false;  // Toggle state for filtering
 
   constructor(private competenciesService: CompetenciesService,
-              private preloadImagesService: PreloadImagesService
+    private preloadImagesService: PreloadImagesService,
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit (): void {
@@ -42,6 +44,12 @@ export class CompetenciesComponent implements OnInit {
     const logosToPreload = this.competencies.map(competency => competency.logo);
     this.preloadImagesService.preloadImages(logosToPreload);
 
+    this.route.paramMap.subscribe(params => {
+      const competencyId = params.get('id');
+      if (competencyId) {
+        this.openCompetencyById(competencyId);
+      }
+    });
   }
 
   selectedCompetency: any = null;
@@ -90,4 +98,11 @@ export class CompetenciesComponent implements OnInit {
     }
   }
 
+  private openCompetencyById (id: string): void {
+    const competency = this.competencies.find(c => c.title === id);
+    if (competency) {
+      this.onCardClick(competency.category, competency);
+    }
+  }
+  
 }

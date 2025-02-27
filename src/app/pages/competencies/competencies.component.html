@@ -89,6 +89,9 @@
               <i class="fas" [class.fa-star]="i < selectedCompetency.level" [class.fa-star-half-alt]="i === selectedCompetency.level - 0.5" [class.fa-star-o]="i >= selectedCompetency.level"></i>
             </ng-container>
           </div>
+          <button class="btn btn-outline btn-sm mt-2">
+           <a [routerLink]="['/projets']">Voir mes projets</a>
+          </button>
           <button class="btn btn-sm btn-secondary mt-2" (click)="closeModal()">
             Fermer
           </button>

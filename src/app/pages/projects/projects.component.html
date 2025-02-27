@@ -54,7 +54,8 @@
               <span
                 class="competency-badge"
                 *ngFor="let competency of project.involved_competencies"
-                >{{ competency }}</span
+                >
+            <a [routerLink]="['/mes-competences', competency]">{{ competency }}</a></span
               >
             </div>
           </div>
@@ -118,7 +119,9 @@
             </div>
 
             <div class="timeline-competencies" *ngIf="selectedProject.involved_competencies.length">
-              <span class="competency-badge" *ngFor="let competency of selectedProject.involved_competencies">{{ competency }}</span>
+              <span class="competency-badge" *ngFor="let competency of selectedProject.involved_competencies">
+               
+            <a [routerLink]="['/mes-competences', competency]">{{ competency }}</a></span>
             </div>
         </div>
         <div class="popin-footer">

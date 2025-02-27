@@ -13,6 +13,7 @@ import { LibraryComponent } from './pages/library/library.component';
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'mes-competences', component: CompetenciesComponent },
+  { path: 'mes-competences/:id', component: CompetenciesComponent },
   { path: 'projets', component: ProjectsComponent },
   { path: 'achievements', component: AchievementsComponent },
   { path: 'library', component: LibraryComponent },
