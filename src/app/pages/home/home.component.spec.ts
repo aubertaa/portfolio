@@ -22,8 +22,8 @@ describe('HomeComponent', () => {
         expect(component).toBeTruthy();
     });
 
-    it('should have a sections array with 5 sections', () => {
-        expect(component.sections.length).toBe(5);
+    it('should have a sections array with 6 sections', () => {
+        expect(component.sections.length).toBe(6);
     });
 
     it('should render section titles and descriptions', () => {
@@ -47,6 +47,6 @@ describe('HomeComponent', () => {
         const subHeader = fixture.debugElement.query(By.css('h2')).nativeElement.textContent.trim();
 
         expect(header).toBe('Bienvenue sur mon Portfolio');
-        expect(subHeader).toBe('Head of software engineering');
+        expect(subHeader).toBe('Head of software engineering - Piano Analytics');
     });
 });

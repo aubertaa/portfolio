@@ -55,6 +55,6 @@ describe('HeaderComponent', () => {
     it('should render all navigation links correctly', () => {
         const links = fixture.nativeElement.querySelectorAll('a.nav-link');
 
-        expect(links.length).toBe(6); // There should be 6 links
+        expect(links.length).toBe(8); // There should be 6 links
     });
 });
