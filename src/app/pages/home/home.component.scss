@@ -93,25 +93,23 @@
 }
 
 .presentation {
-  background-color: #f9f9f9; /* Light background for contrast */
+  //background-color: #f9f9f9; /* Light background for contrast */
   padding: 20px; /* Add padding around the content */
   border-radius: 8px; /* Rounded corners */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1); /* Subtle shadow for depth */
   margin: 20px 0; /* Space above and below the presentation */
   text-align: left; /* Align text to the left */
-  max-width: 800px; /* Limit the width of the presentation */;
+  max-width: 1500px; /* Limit the width of the presentation */
   width: 100%; /* Ensure the article takes full width up to max-width */
 }
 
-.presentation h2 {
-  font-size: 1.5rem; /* Adjust font size for the heading */
-  margin-bottom: 10px; /* Space below the heading */
-  color: #333; /* Darker color for the heading */
+.presentation .highlighted {
+  color: #17a2b8;
 }
 
 .presentation p {
-  font-size: 1rem; /* Standard font size for paragraphs */
-  color: #555; /* Slightly lighter color for the text */
-  line-height: 1.6; /* Improve readability */
+  font-size: 1.3rem; /* Standard font size for paragraphs */
+  //color: #555; /* Slightly lighter color for the text */
+  line-height: 1.2; /* Improve readability */
   margin-bottom: 15px; /* Space below each paragraph */
 }

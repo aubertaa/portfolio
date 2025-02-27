@@ -6,6 +6,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './pages/home/home.component';
+import { ParcoursComponent } from './pages/parcours/parcours.component';
+import { AboutMeComponent } from './pages/aboutme/aboutme.component';
 import { CompetenciesComponent } from './pages/competencies/competencies.component';
 import { ProjectsComponent } from './pages/projects/projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -23,6 +25,8 @@ import { NewlineToBrPipe } from './pipes/newline-to-br.pipe';
   declarations: [
     AppComponent,
     HomeComponent,
+    ParcoursComponent,
+    AboutMeComponent,
     CompetenciesComponent,
     ProjectsComponent,
     ContactComponent,

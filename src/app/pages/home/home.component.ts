@@ -16,6 +16,7 @@ export class HomeComponent implements OnInit {
     { title: 'Mes projets', description: 'Découvrez mes projets et réalisations', link: '/projets' },
     { title: 'Accomplissements', description: 'Mes accomplissements, publications et interventions', link: '/achievements' },
     { title: 'Ma bibliothèque', description: 'Mes lectures professionnelles et sources d\'inspiration', link: '/library' },
+    { title: 'Mon Parcours', description: 'Mon parcours professionnel', link: '/mon-parcours' },
     { title: 'Contact', description: 'Contactez-moi via le formulaire de contact', link: '/contact' },
   ];
 
