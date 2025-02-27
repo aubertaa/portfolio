@@ -5,7 +5,7 @@
   </button>
 
   <!-- Navigation Menu -->
-  <nav class="flex-column flex-md-row" [ngClass]="{'menu-collapsed': isMenuCollapsed}">
+  <nav class="flex-column flex-md-row" [ngClass]="{'menu-collapsed': isMenuCollapsed, 'light-theme' : themeService.isLightTheme}">
     <a class="nav-link mx-md-2" routerLink="/"><i class="fas fa-home" title="Retour à l'accueil"></i></a>
     <a class="nav-link mx-md-2" routerLink="/aboutme">A propos</a>
     <a class="nav-link mx-md-2" routerLink="/mon-parcours">Parcours</a>

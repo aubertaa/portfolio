@@ -19,6 +19,11 @@ export class ThemeService {
       header.classList.toggle('light-theme', this.isLightTheme);
     }
 
+    const navmenu = document.querySelector('header nav');
+    if (navmenu) {
+      navmenu.classList.toggle('light-theme', this.isLightTheme);
+    }
+
     const footer = document.querySelector('footer');
     if (footer) {
       footer.classList.toggle('light-theme', this.isLightTheme);

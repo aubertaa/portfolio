@@ -21,6 +21,11 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
+  
+  nav.light-theme {
+    background-color: #f8f9fa;
+  }
+
   .burger-menu {
     display: block !important; /* Force visibility of the burger menu */
   }
@@ -53,6 +58,7 @@ header.light-theme {
 }
 
 header.light-theme nav a {
+  background-color: #f8f9fa;
   color: #343a40;
 }
 
